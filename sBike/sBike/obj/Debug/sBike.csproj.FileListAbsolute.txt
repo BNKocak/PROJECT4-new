@@ -7,6 +7,12 @@ C:\Users\Burhan Kocak\Desktop\sBike\sBike\bin\Debug\Syncfusion.SfChart.Android.d
 C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\sBike.dll
 C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\sBike.pdb
 C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\android\bin\sBike.sBike.apk
+C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\res\layout\removetask_layout.xml
+C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\res\layout\searchlayout.xml
+C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\res\layout\updatetasklayout.xml
+C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\res\layout\vraag1_layout.xml
+C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\res\layout\database.xml
+C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\res\layout\inserttasklayout.xml
 C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\res\layout\main.xml
 C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\res\values\strings.xml
 C:\Users\Burhan Kocak\Desktop\sBike\sBike\obj\Debug\res\drawable\icon.png

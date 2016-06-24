@@ -42,6 +42,28 @@ namespace Phoneword
                 var intent = new Intent(this, typeof(database_Activity));
                 StartActivity(intent);
             };
+
+            //// Disable the "Call" button
+            //callButton.Enabled = false;
+
+            //// Add code to translate number
+            //string translatedNumber = string.Empty;
+
+            //translateButton.Click += (object sender, EventArgs e) =>
+            //{
+            //    // Translate user's alphanumeric phone number to numeric
+            //    translatedNumber = Core.PhonewordTranslator.ToNumber(phoneNumberText.Text);
+            //    if (String.IsNullOrWhiteSpace(translatedNumber))
+            //    {
+            //        callButton.Text = "Call";
+            //        callButton.Enabled = false;
+            //    }
+            //    else
+            //    {
+            //        callButton.Text = "Call " + translatedNumber;
+            //        callButton.Enabled = true;
+            //    }
+            //};
         }
     }
 }
