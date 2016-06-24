@@ -2,6 +2,30 @@ Phoneword.MainActivity, sBike;md5f12b7853c095c565d1b8996193be56fc.MainActivity
 Phoneword.MainActivity, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f12b7853c095c565d1b8996193be56fc.MainActivity
 Phoneword.MainActivity;md5f12b7853c095c565d1b8996193be56fc.MainActivity
 phoneword.MainActivity;md5f12b7853c095c565d1b8996193be56fc.MainActivity
+sBike.Activity2, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity2
+sBike.Activity2, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity2
+sBike.Activity2;md5a95236d96ab66b60d1cd57ed5eada663.Activity2
+sbike.Activity2;md5a95236d96ab66b60d1cd57ed5eada663.Activity2
+sBike.Activity3, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity3
+sBike.Activity3, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity3
+sBike.Activity3;md5a95236d96ab66b60d1cd57ed5eada663.Activity3
+sbike.Activity3;md5a95236d96ab66b60d1cd57ed5eada663.Activity3
+sBike.Activity4, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity4
+sBike.Activity4, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity4
+sBike.Activity4;md5a95236d96ab66b60d1cd57ed5eada663.Activity4
+sbike.Activity4;md5a95236d96ab66b60d1cd57ed5eada663.Activity4
+sBike.Activity5, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity5
+sBike.Activity5, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity5
+sBike.Activity5;md5a95236d96ab66b60d1cd57ed5eada663.Activity5
+sbike.Activity5;md5a95236d96ab66b60d1cd57ed5eada663.Activity5
+sBike.Activity6, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity6
+sBike.Activity6, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity6
+sBike.Activity6;md5a95236d96ab66b60d1cd57ed5eada663.Activity6
+sbike.Activity6;md5a95236d96ab66b60d1cd57ed5eada663.Activity6
+sBike.Activity7, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity7
+sBike.Activity7, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity7
+sBike.Activity7;md5a95236d96ab66b60d1cd57ed5eada663.Activity7
+sbike.Activity7;md5a95236d96ab66b60d1cd57ed5eada663.Activity7
 sBike.database_Activity, sBike;md5a95236d96ab66b60d1cd57ed5eada663.database_Activity
 sBike.database_Activity, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.database_Activity
 sBike.database_Activity;md5a95236d96ab66b60d1cd57ed5eada663.database_Activity
@@ -22,10 +46,10 @@ sBike.UpdateTask_Activity, sBike;md5a95236d96ab66b60d1cd57ed5eada663.UpdateTask_
 sBike.UpdateTask_Activity, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.UpdateTask_Activity
 sBike.UpdateTask_Activity;md5a95236d96ab66b60d1cd57ed5eada663.UpdateTask_Activity
 sbike.UpdateTask_Activity;md5a95236d96ab66b60d1cd57ed5eada663.UpdateTask_Activity
-sBike.Vraag1_Activity, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Vraag1_Activity
-sBike.Vraag1_Activity, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Vraag1_Activity
-sBike.Vraag1_Activity;md5a95236d96ab66b60d1cd57ed5eada663.Vraag1_Activity
-sbike.Vraag1_Activity;md5a95236d96ab66b60d1cd57ed5eada663.Vraag1_Activity
+sBike.Activity1, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity1
+sBike.Activity1, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity1
+sBike.Activity1;md5a95236d96ab66b60d1cd57ed5eada663.Activity1
+sbike.Activity1;md5a95236d96ab66b60d1cd57ed5eada663.Activity1
 Com.Syncfusion.Charts.ChartSeries/IOnDataMarkerLabelCreatedListenerImplementor, Syncfusion.SfChart.Android;mono.com.syncfusion.charts.ChartSeries_OnDataMarkerLabelCreatedListenerImplementor
 Com.Syncfusion.Charts.ChartSeries+IOnDataMarkerLabelCreatedListenerImplementor, Syncfusion.SfChart.Android, Version=14.1451.0.41, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89;mono.com.syncfusion.charts.ChartSeries_OnDataMarkerLabelCreatedListenerImplementor
 Com.Syncfusion.Charts.ChartSeries.IOnDataMarkerLabelCreatedListenerImplementor;mono.com.syncfusion.charts.ChartSeries_OnDataMarkerLabelCreatedListenerImplementor

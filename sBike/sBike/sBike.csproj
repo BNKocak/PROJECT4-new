@@ -16,7 +16,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -52,7 +52,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity2.cs" />
+    <Compile Include="Activity3.cs" />
+    <Compile Include="Activity4.cs" />
+    <Compile Include="Activity5.cs" />
+    <Compile Include="Activity6.cs" />
+    <Compile Include="Activity7.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="database_Activity.cs" />
+    <Compile Include="IChart.cs" />
     <Compile Include="InsertTask_Activity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="RemoveTask_Activity.cs" />
@@ -60,7 +68,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search_Activity.cs" />
     <Compile Include="UpdateTask_Activity.cs" />
-    <Compile Include="Vraag1_Activity.cs" />
+    <Compile Include="Activity1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
