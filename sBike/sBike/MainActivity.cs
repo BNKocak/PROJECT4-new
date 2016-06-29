@@ -7,6 +7,7 @@ using Android.Widget;
 using Android.OS;
 using sBike;
 using Com.Syncfusion.Charts;
+using System.Collections.Generic;
 
 namespace Phoneword
 {
@@ -21,63 +22,37 @@ namespace Phoneword
             SetContentView(Resource.Layout.Main);
 
             // Our code will go here
-            //EditText phoneNumberText = FindViewById<EditText>(Resource.Id.PhoneNumberText);
-            Button button1 = FindViewById<Button>(Resource.Id.Vraag1);
-            Button button2 = FindViewById<Button>(Resource.Id.Vraag2);
-            Button button3 = FindViewById<Button>(Resource.Id.Vraag3);
-            Button button4 = FindViewById<Button>(Resource.Id.Vraag4);
-            Button button5 = FindViewById<Button>(Resource.Id.Vraag5);
-            Button button6 = FindViewById<Button>(Resource.Id.Vraag6);
-            Button button7 = FindViewById<Button>(Resource.Id.Vraag7);
-            Button btnDatabase = FindViewById<Button>(Resource.Id.btnDatabase);
+            List<Button> buttonlist = new List<Button>();
+            List<Type> activitylist = new List<Type>();
 
-            button1.Click += (sender, e) =>
-            {
-                var intent = new Intent(this, typeof(Activity1));
-                StartActivity(intent);
-            };
+            buttonlist.Add(FindViewById<Button>(Resource.Id.Vraag1));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.Vraag2));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.Vraag3));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.Vraag4));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.Vraag5));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.Vraag6));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.Vraag7));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.btnDatabase));
 
-            button2.Click += (sender, e) =>
-            {
-                var intent = new Intent(this, typeof(Activity2));
-                StartActivity(intent);
-            };
+            activitylist.Add(typeof(Activity1));
+            activitylist.Add(typeof(Activity2));
+            activitylist.Add(typeof(Activity3));
+            activitylist.Add(typeof(Activity4));
+            activitylist.Add(typeof(Activity5));
+            activitylist.Add(typeof(Activity6));
+            activitylist.Add(typeof(Activity7));
 
-            button3.Click += (sender, e) =>
+            
+            foreach (Button btn in buttonlist)
             {
-                var intent = new Intent(this, typeof(Activity3));
-                StartActivity(intent);
-            };
+                
+                btn.Click += (sender, e) =>
+                {
+                    var intent = new Intent(this, activitylist[buttonlist.IndexOf(btn)]);
+                    StartActivity(intent);
+                };
+            }
 
-            button4.Click += (sender, e) =>
-            {
-                var intent = new Intent(this, typeof(Activity4));
-                StartActivity(intent);
-            };
-
-            button5.Click += (sender, e) =>
-            {
-                var intent = new Intent(this, typeof(Activity5));
-                StartActivity(intent);
-            };
-
-            button6.Click += (sender, e) =>
-            {
-                var intent = new Intent(this, typeof(Activity6));
-                StartActivity(intent);
-            };
-
-            button7.Click += (sender, e) =>
-            {
-                var intent = new Intent(this, typeof(Activity7));
-                StartActivity(intent);
-            };
-
-            btnDatabase.Click += (sender, e) =>
-            {
-                var intent = new Intent(this, typeof(database_Activity));
-                StartActivity(intent);
-            };
 
             //// Disable the "Call" button
             //callButton.Enabled = false;
