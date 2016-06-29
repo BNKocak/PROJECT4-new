@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="sBike.sBike" android:versionCode="1" android:versionName="1.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="sBike.sBike" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.READ_CALENDAR" />
+  <uses-permission android:name="android.permission.WRITE_CALENDAR" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="sBike" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
@@ -17,7 +19,9 @@
     <activity android:label="Activity5" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity5" />
     <activity android:label="Activity6" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity6" />
     <activity android:label="Activity7" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity7" />
+    <activity android:label="CalendarDemo" android:name="md5a95236d96ab66b60d1cd57ed5eada663.CalendarListActivity" />
     <activity android:label="Database" android:name="md5a95236d96ab66b60d1cd57ed5eada663.database_Activity" />
+    <activity android:label="EventListActivity" android:name="md5a95236d96ab66b60d1cd57ed5eada663.EventListActivity" />
     <activity android:label="InsertTask_Activity" android:name="md5a95236d96ab66b60d1cd57ed5eada663.InsertTask_Activity" />
     <activity android:label="RemoveTask_Activity" android:name="md5a95236d96ab66b60d1cd57ed5eada663.RemoveTask_Activity" />
     <activity android:label="Search_Activity" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Search_Activity" />

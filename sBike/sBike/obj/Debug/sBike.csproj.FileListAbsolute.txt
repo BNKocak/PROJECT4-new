@@ -86,5 +86,9 @@ C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\assets\
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\calendarlist.xml
+C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\callistitem.xml
+C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\eventlist.xml
+C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\eventlistitem.xml
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.dll.mdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\sBike.dll.mdb
