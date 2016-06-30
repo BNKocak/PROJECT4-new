@@ -29,16 +29,33 @@ namespace sBike
                CalendarContract.Calendars.InterfaceConsts.CalendarDisplayName,
                CalendarContract.Calendars.InterfaceConsts.AccountName
             };
-            
+
+            string singlecalendarsprojectionn = calendarsProjection[0];
+            string[] arraycalendar = { singlecalendarsprojectionn };
+
             var cursor = ManagedQuery (calendarsUri, calendarsProjection, null, null, null);
             
             string[] sourceColumns = {CalendarContract.Calendars.InterfaceConsts.CalendarDisplayName, 
                 CalendarContract.Calendars.InterfaceConsts.AccountName};
-            
-            int[] targetResources = {Resource.Id.calDisplayName, Resource.Id.calAccountName};       
-            
+
+            int[] targetResources = { Resource.Id.calDisplayName, Resource.Id.calAccountName };
+            string singelcolumn = sourceColumns[0];
+            string[] singlecolumn = { singelcolumn };
+            int singleResource = targetResources[0];
+            int[] doubleresource = { singleResource };
+
+            Console.WriteLine(calendarsProjection);
+            Console.WriteLine(sourceColumns);
+            Console.WriteLine(targetResources);
+
+
+
+
+
+
+
             SimpleCursorAdapter adapter = new SimpleCursorAdapter (this, Resource.Layout.CalListItem, 
-                cursor, sourceColumns, targetResources);
+                cursor, singlecolumn, doubleresource);
             
             ListAdapter = adapter;
             
