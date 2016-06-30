@@ -40,7 +40,8 @@ namespace Phoneword
             activitylist.Add(typeof(Activity4));
             activitylist.Add(typeof(Activity5));
             activitylist.Add(typeof(Activity6));
-            activitylist.Add(typeof(CalendarListActivity));
+            activitylist.Add(typeof(Activity7));
+            activitylist.Add(typeof(database_Activity));
 
             
             foreach (Button btn in buttonlist)

@@ -42,12 +42,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Data.Sqlite" />
     <Reference Include="mscorlib" />
+    <Reference Include="SQLite-net">
+      <HintPath>..\..\..\Project4\App1\App1\bin\Debug\SQLite-net.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.SfChart.Android">
       <HintPath>..\..\Syncfusion.SfChart.Android.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -61,19 +66,21 @@
     <Compile Include="CalendarListActivity.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="database_Activity.cs" />
+    <Compile Include="DBRepository.cs" />
     <Compile Include="EventListActivity.cs" />
+    <Compile Include="Fietsdiefstal.cs" />
+    <Compile Include="Fietstrommels.cs" />
     <Compile Include="IChart.cs" />
-    <Compile Include="InsertTask_Activity.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="RemoveTask_Activity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Search_Activity.cs" />
-    <Compile Include="UpdateTask_Activity.cs" />
     <Compile Include="Activity1.cs" />
+    <Compile Include="SQLite.cs" />
+    <Compile Include="SQLiteAsync.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
+    <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\RemoveTask_Layout.axml" />

@@ -22,10 +22,6 @@
     <activity android:label="CalendarDemo" android:name="md5a95236d96ab66b60d1cd57ed5eada663.CalendarListActivity" />
     <activity android:label="Database" android:name="md5a95236d96ab66b60d1cd57ed5eada663.database_Activity" />
     <activity android:label="EventListActivity" android:name="md5a95236d96ab66b60d1cd57ed5eada663.EventListActivity" />
-    <activity android:label="InsertTask_Activity" android:name="md5a95236d96ab66b60d1cd57ed5eada663.InsertTask_Activity" />
-    <activity android:label="RemoveTask_Activity" android:name="md5a95236d96ab66b60d1cd57ed5eada663.RemoveTask_Activity" />
-    <activity android:label="Search_Activity" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Search_Activity" />
-    <activity android:label="UpdateTask_Activity" android:name="md5a95236d96ab66b60d1cd57ed5eada663.UpdateTask_Activity" />
     <activity android:label="@string/Vraag1" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity1" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="sBike.sBike.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
