@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Com.Syncfusion.Charts;
+using Com.Syncfusion.Charts.Enums;
+using Android.Graphics;
 
 namespace sBike
 {
@@ -20,11 +22,15 @@ namespace sBike
             SfChart chart = new SfChart(source);
             CategoryAxis primaryAxis = new CategoryAxis();
 
-            primaryAxis.Title.Text = "Month";
+            primaryAxis.Title.Text = "Deelgemeente";
             chart.PrimaryAxis = primaryAxis;
             NumericalAxis secondaryAxis = new NumericalAxis();
-            secondaryAxis.Title.Text = "Temperature";
+            secondaryAxis.Title.Text = "Aantal fietstrommels";
             chart.SecondaryAxis = secondaryAxis;
+            chart.Legend.Visibility = Visibility.Visible;
+            chart.Legend.LabelStyle.TextColor = Color.White;
+
+
 
             DataModel dataModel = new DataModel();
 
