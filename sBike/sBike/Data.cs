@@ -9,7 +9,10 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.IO;
+
 using Com.Syncfusion.Charts;
+using SQLite;
 
 namespace sBike
 {
@@ -20,18 +23,18 @@ namespace sBike
         public DataModel()
         {
             HighTemperature = new ObservableArrayList();
-            HighTemperature.Add(new ChartDataPoint("Jan", 42));
-            HighTemperature.Add(new ChartDataPoint("Feb", 44));
-            HighTemperature.Add(new ChartDataPoint("Mar", 53));
-            HighTemperature.Add(new ChartDataPoint("Apr", 64));
-            HighTemperature.Add(new ChartDataPoint("May", 75));
-            HighTemperature.Add(new ChartDataPoint("Jun", 83));
-            HighTemperature.Add(new ChartDataPoint("Jul", 87));
-            HighTemperature.Add(new ChartDataPoint("Aug", 84));
-            HighTemperature.Add(new ChartDataPoint("Sep", 78));
-            HighTemperature.Add(new ChartDataPoint("Oct", 67));
-            HighTemperature.Add(new ChartDataPoint("Nov", 55));
-            HighTemperature.Add(new ChartDataPoint("Dec", 45));
+
+            string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "ormdemo.db3");
+            var db = new SQLiteConnection(dbPath);
+            string query = "SELECT COUNT(*),Deelgemeente from Fietstrommels GROUP BY Deelgemeente ORDER BY COUNT(*) DESC LIMIT 5";
+            int i = 0;
+            int[] FCount = { 222, 168, 88, 78, 56 };
+            var item = db.Query<Fietstrommels>(query);
+            foreach (var row in item)
+            {
+                HighTemperature.Add(new ChartDataPoint(row.Deelgemeente, FCount[i]));
+                i++;
+            }
         }
     }
 }
