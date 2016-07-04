@@ -60,6 +60,10 @@ namespace sBike
             // to retrieve specifick record
             Button btnGetById = FindViewById<Button>(Resource.Id.btnGetDataByID);
             btnGetById.Click += btnGetById_Click;
+
+            // delete
+            Button btnDel = FindViewById<Button>(Resource.Id.btnDelete);
+            btnDel.Click += btnDelAll_Click;
         }
 
         void btnGetById_Click(object sender, EventArgs e)
@@ -73,6 +77,12 @@ namespace sBike
             DBRepository dbr = new DBRepository();
             var result = dbr.GetAllRecords();
             Toast.MakeText(this, result, ToastLength.Short).Show();
+        }
+
+        void btnDelAll_Click(object sender, EventArgs e)
+        {
+            DBRepository dbr = new DBRepository();
+            dbr.deleteData();
         }
         static void ExploreDirectories(string root)
         {
@@ -93,6 +103,7 @@ namespace sBike
             
             string csvpath1 = Path.Combine("/storage/extSdCard", "Fietstrommels.csv");
             string csvpath2 = Path.Combine("/storage/extSdCard", "fietsdiefstal-rotterdam-2011-2013.csv");
+            string csvpath3 = Path.Combine("/data/data/App1.App1/files", "Fietstrommels.csv");
 
             //var x = Directory.GetDirectories(csvdir);
             //string[] test = File.ReadAllLines(csvpath);
@@ -101,6 +112,7 @@ namespace sBike
 
             ReadandParseData(csvpath1, ',');
             ReadandParseData(csvpath2, ',');
+            //ReadandParseData(csvpath3, ',');
 
             int cnt1 = 0;
             //int cnt2 = 0;

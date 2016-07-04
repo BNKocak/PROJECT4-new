@@ -17,11 +17,10 @@ namespace sBike
         //code to create the database
         public string CreateDB()
         {
-            
+
             var output = "";
             output += "Creating Database if it doesnt exist.";
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormdemo.db3");
-            var db = new SQLiteConnection(dbPath);
+            var db = new SQLiteConnection(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormdemo.db3"));
             output += "\nDatabase Created...";
             return output;
         }
@@ -31,12 +30,10 @@ namespace sBike
         {
             try
             {
-                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormdemo.db3");
-                var db = new SQLiteConnection(dbPath);
                 db.CreateTable<Fietstrommels>();
                 db.CreateTable<Fietsdiefstal>();
                 string result = "Table Created successfully..";
-                return result;     
+                return result;
             }
             catch (Exception ex)
             {
@@ -51,17 +48,17 @@ namespace sBike
             {
 
                 Fietstrommels item = new Fietstrommels();
-                item.InvNr          = row[0];
-                item.InvSrt         = row[1];
-                item.Omschrijving   = row[2];
-                item.Straat         = row[3];
-                item.Thv            = row[4];
-                item.XCoord         = float.Parse(row[5]);
-                item.YCoord         = float.Parse(row[6]);
-                item.Deelgemeente   = row[7];
-                item.Status         = row[8];
-                item.MutDatum       = row[9];
-                item.User           = row[10];
+                item.InvNr = row[0];
+                item.InvSrt = row[1];
+                item.Omschrijving = row[2];
+                item.Straat = row[3];
+                item.Thv = row[4];
+                item.XCoord = float.Parse(row[5]);
+                item.YCoord = float.Parse(row[6]);
+                item.Deelgemeente = row[7];
+                item.Status = row[8];
+                item.MutDatum = row[9];
+                item.User = row[10];
                 db.Insert(item);
                 return "Records Added...";
             }
@@ -74,8 +71,6 @@ namespace sBike
         //code to retrieve all the records
         public string GetAllRecords()
         {
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormdemo.db3");
-            var db = new SQLiteConnection(dbPath);
 
             string output = "";
             output += "Retrieving the data using ORM...";
@@ -91,19 +86,22 @@ namespace sBike
         //code to receive vraag 1 data
         public string GetVraag1()
         {
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormdemo.db3");
-            var db = new SQLiteConnection(dbPath);
             string output = "";
-            string query = "SELECT COUNT(*),Deelgemeente from Fietstrommels GROUP BY Deelgemeente ORDER BY COUNT(*) DESC LIMIT 5";
+            string query = "SELECT COUNT(*) as FCount,Deelgemeente from Fietstrommels GROUP BY Deelgemeente ORDER BY COUNT(*) DESC LIMIT 5";
             int i = 0;
-            int[] FCount = { 222, 168, 88, 78, 56 };            
+            int[] FCount = { 222, 168, 88, 78, 56 };
             var item = db.Query<Fietstrommels>(query);
-            foreach(var row in item)
+            foreach (var row in item)
             {
-                output += "\n" + row.Deelgemeente + " --- " + FCount[i];
+                output += "\n" + row.Deelgemeente + " --- " + row.FCount;
                 i++;
             }
             return output;
+        }
+
+        public void deleteData()
+        {
+            db.Query<Fietstrommels>("DELETE FROM Fietstrommels");
         }
     }
 }

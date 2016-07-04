@@ -19,7 +19,7 @@ namespace sBike
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SfChart chart = new IChart().Create(this, "Line");
+            SfChart chart = new ChartFactory().Create(this, "Line");
 
             SetContentView(chart);
         }

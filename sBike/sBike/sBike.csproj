@@ -63,14 +63,12 @@
     <Compile Include="Activity5.cs" />
     <Compile Include="Activity6.cs" />
     <Compile Include="Activity7.cs" />
-    <Compile Include="CalendarListActivity.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="database_Activity.cs" />
     <Compile Include="DBRepository.cs" />
-    <Compile Include="EventListActivity.cs" />
     <Compile Include="Fietsdiefstal.cs" />
     <Compile Include="Fietstrommels.cs" />
-    <Compile Include="IChart.cs" />
+    <Compile Include="ChartFactory.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

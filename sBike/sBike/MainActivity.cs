@@ -43,39 +43,16 @@ namespace Phoneword
             activitylist.Add(typeof(Activity7));
             activitylist.Add(typeof(database_Activity));
 
-            
+
             foreach (Button btn in buttonlist)
             {
-                
+
                 btn.Click += (sender, e) =>
                 {
                     var intent = new Intent(this, activitylist[buttonlist.IndexOf(btn)]);
                     StartActivity(intent);
                 };
             }
-
-
-            //// Disable the "Call" button
-            //callButton.Enabled = false;
-
-            //// Add code to translate number
-            //string translatedNumber = string.Empty;
-
-            //translateButton.Click += (object sender, EventArgs e) =>
-            //{
-            //    // Translate user's alphanumeric phone number to numeric
-            //    translatedNumber = Core.PhonewordTranslator.ToNumber(phoneNumberText.Text);
-            //    if (String.IsNullOrWhiteSpace(translatedNumber))
-            //    {
-            //        callButton.Text = "Call";
-            //        callButton.Enabled = false;
-            //    }
-            //    else
-            //    {
-            //        callButton.Text = "Call " + translatedNumber;
-            //        callButton.Enabled = true;
-            //    }
-            //};
         }
     }
 }
