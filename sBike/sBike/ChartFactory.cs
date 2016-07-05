@@ -17,7 +17,9 @@ namespace sBike
 {
     class ChartFactory
     {
-        public SfChart Create(Activity source, string name)
+        private ZoomMode x;
+
+        public SfChart Create(Activity source, string name, ObservableArrayList dataModel, ObservableArrayList dataModel_2)
         {
             SfChart chart = new SfChart(source);
             chart.SetBackgroundColor(Color.Black);
@@ -26,44 +28,30 @@ namespace sBike
             chart.Title.SetTextColor(Color.White);
             ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
             chart.Behaviors.Add(zoomPanBehavior);
-
-                
+        
 
             if (name == "Pie")
             {
-                DataModel_Question4 dataModel = new DataModel_Question4();
-                PieSeries pieSeries_brands = (new PieSeries()
+                PieSeries pieSeries = (new PieSeries()
                 {
-                    DataSource = dataModel.DataList,
+                    DataSource = dataModel,
                     StartAngle = 45,
                     EndAngle = 405,
                     SmartLabelsEnabled = true,
                     ConnectorType = ConnectorType.Bezier,
                     DataMarkerPosition = CircularSeriesDataMarkerPosition.OutsideExtended,
-                    Label = "Brands"
                 });
-                PieSeries pieSeries_colors = (new PieSeries()
-                {
-                    DataSource = dataModel.DataList,
-                    StartAngle = 45,
-                    EndAngle = 405,
-                    SmartLabelsEnabled = true,
-                    ConnectorType = ConnectorType.Bezier,
-                    DataMarkerPosition = CircularSeriesDataMarkerPosition.OutsideExtended,
-                    Label = "Colors"
-                });
-                pieSeries_brands.DataMarker.ShowLabel = true;
-                pieSeries_brands.AnimationDuration = 2;
-                pieSeries_brands.AnimationEnabled = true;
-                chart.Series.Add(pieSeries_brands);
-                chart.Series.Add(pieSeries_colors);
+                
+                pieSeries.DataMarker.ShowLabel = true;
+                pieSeries.AnimationDuration = 2;
+                pieSeries.AnimationEnabled = true;
+                chart.Series.Add(pieSeries);
             }
             if (name == "Bar")
             {
-                DataModel_Question1 dataModel = new DataModel_Question1();
                 ColumnSeries columnSeries = (new ColumnSeries()
                 {
-                    DataSource = dataModel.DataList,
+                    DataSource = dataModel,
                     Label = "Amount of Bikecontainers"
 
                 });
@@ -76,35 +64,32 @@ namespace sBike
 
             if (name == "GroupedBar")
             {
-                DataModel_Question3_1 dataModel_1 = new DataModel_Question3_1();
-                DataModel_Question3_2 dataModel_2 = new DataModel_Question3_2();
-                ColumnSeries columnSeries_thefts = (new ColumnSeries()
+                ColumnSeries columnSeries_1 = (new ColumnSeries()
                 {
-                    DataSource = dataModel_1.DataList,
+                    DataSource = dataModel,
                     Label = "Thefts"
 
                 });
-                ColumnSeries columnSeries_containers = (new ColumnSeries()
+                ColumnSeries columnSeries_2 = (new ColumnSeries()
                 {
-                    DataSource = dataModel_2.DataList,
+                    DataSource = dataModel_2,
                     Label = "Containers"
                 });
-                columnSeries_thefts.DataMarker.ShowLabel = true;
-                columnSeries_thefts.AnimationEnabled = true;
-                columnSeries_thefts.AnimationDuration = 2;
-                columnSeries_containers.DataMarker.ShowLabel = true;
-                columnSeries_containers.AnimationEnabled = true;
-                columnSeries_containers.AnimationDuration = 2;
-                chart.Series.Add(columnSeries_thefts);
-                chart.Series.Add(columnSeries_containers);
+                columnSeries_1.DataMarker.ShowLabel = true;
+                columnSeries_1.AnimationEnabled = true;
+                columnSeries_1.AnimationDuration = 2;
+                columnSeries_2.DataMarker.ShowLabel = true;
+                columnSeries_2.AnimationEnabled = true;
+                columnSeries_2.AnimationDuration = 2;
+                chart.Series.Add(columnSeries_1);
+                chart.Series.Add(columnSeries_2);
             }
 
             if (name == "Line")
             {
-                DataModel_Question2 dataModel = new DataModel_Question2();
                 LineSeries lineSeries = (new LineSeries()
                 {
-                    DataSource = dataModel.DataList,
+                    DataSource = dataModel,
                     Label = "Stolen Bycicles"
                 });
                 lineSeries.DataMarker.ShowLabel = true;

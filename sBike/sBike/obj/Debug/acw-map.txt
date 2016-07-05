@@ -14,6 +14,14 @@ sBike.Activity4, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity4
 sBike.Activity4, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity4
 sBike.Activity4;md5a95236d96ab66b60d1cd57ed5eada663.Activity4
 sbike.Activity4;md5a95236d96ab66b60d1cd57ed5eada663.Activity4
+sBike.Activity4_1, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity4_1
+sBike.Activity4_1, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity4_1
+sBike.Activity4_1;md5a95236d96ab66b60d1cd57ed5eada663.Activity4_1
+sbike.Activity4_1;md5a95236d96ab66b60d1cd57ed5eada663.Activity4_1
+sBike.Activity4_2, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity4_2
+sBike.Activity4_2, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity4_2
+sBike.Activity4_2;md5a95236d96ab66b60d1cd57ed5eada663.Activity4_2
+sbike.Activity4_2;md5a95236d96ab66b60d1cd57ed5eada663.Activity4_2
 sBike.Activity5, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity5
 sBike.Activity5, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity5
 sBike.Activity5;md5a95236d96ab66b60d1cd57ed5eada663.Activity5

@@ -165,16 +165,18 @@ namespace sBike
         public string GetVraag4()
         {
             string output2 = "";
+            string query = "SELECT COUNT(*) as Thefts, Werkgebied FROM Fietsdiefstal GROUP BY Werkgebied";
             string query_1 = "SELECT DISTINCT Werkgebied FROM Fietsdiefstal";
-            string query_2 = "SELECT DISTINCT Deelgemeente FROM Fietstrommels";
-            string query_3 = "select COUNT(*) as FCount, strftime('%Y-%m', MutDatum) as 'month_year' from Fietstrommels WHERE (MutDatum between '2011-01-01' and '2016-05-07') and Deelgemeente = 'Ridderkerk' group by strftime('%Y-%m', MutDatum) order by strftime('%Y-%m', month_year)";
-            var item = db.Query<Fietsdiefstal>(query_1);
+            string query_2 = "select COUNT(*) as Vraag2, strftime('%m-%Y', MutDatum) as 'month_year' from Fietstrommels group by strftime('%m-%Y', MutDatum)";
+            string query_3 = "select COUNT(*) as FCount, strftime('%Y-%m', MutDatum) as 'month_year' from Fietstrommels WHERE (MutDatum between '2011-01-01' and '2016-05-07') group by strftime('%Y-%m', MutDatum) order by strftime('%Y-%m', month_year)";
+            var item = db.Query<Fietstrommels>(query_3);
             foreach (var row in item)
             {
-                output2 += "\n" + row.Werkgebied + " --- " + row.Thefts;
+                output2 += "\n" + row.month_year + "---" + row.FCount;
             }
+            Console.Write(output2);
             return output2;
-            
+
         }
 
         public void deleteData()

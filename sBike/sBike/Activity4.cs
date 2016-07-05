@@ -20,23 +20,23 @@ namespace sBike
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SfChart chart = new ChartFactory().Create(this, "Pie");
+            
+            SetContentView(Resource.Layout.Question4_layout);
 
-            chart.Title.Text = "Top 5 amount of thefts per neighbourhood";
+            Button Brands_button = (FindViewById<Button>(Resource.Id.brands_button));
+            Button Colors_button = (FindViewById<Button>(Resource.Id.colors_button));
 
-            CategoryAxis primaryAxis = new CategoryAxis();
-            NumericalAxis secondaryAxis = new NumericalAxis();
+            Brands_button.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(Activity4_1));
+                StartActivity(intent);
+            };
 
-            primaryAxis.Title.TextColor = Color.White;
-            primaryAxis.Title.Text = "Deelgemeente";
-
-            secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Aantal fietstrommels";
-
-            chart.PrimaryAxis = primaryAxis;
-            chart.SecondaryAxis = secondaryAxis;
-
-            SetContentView(chart);
+            Colors_button.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(Activity4_2));
+                StartActivity(intent);
+            };
         }
     }
 }

@@ -44,6 +44,6 @@ namespace sBike
         public int FCount { get; set; }
 
         [Column("month_year")]
-        public int month_year { get; set; }
+        public string month_year { get; set; }
     }
 }

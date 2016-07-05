@@ -60,6 +60,8 @@
     <Compile Include="Activity2.cs" />
     <Compile Include="Activity3.cs" />
     <Compile Include="Activity4.cs" />
+    <Compile Include="Activity4_1.cs" />
+    <Compile Include="Activity4_2.cs" />
     <Compile Include="Activity5.cs" />
     <Compile Include="Activity6.cs" />
     <Compile Include="Activity7.cs" />
@@ -95,6 +97,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Question7_layout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Question4_layout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

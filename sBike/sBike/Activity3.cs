@@ -20,7 +20,8 @@ namespace sBike
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SfChart chart = new ChartFactory().Create(this, "GroupedBar");
+            DataModel dataModel = new DataModel();
+            SfChart chart = new ChartFactory().Create(this, "GroupedBar", dataModel.Question3_1(), dataModel.Question3_2());
 
             chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
 

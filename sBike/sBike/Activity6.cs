@@ -25,8 +25,8 @@ namespace sBike
             //frag.Show(FragmentManager, frag.Tag);
 
             // Create your application here
-
-            SfChart chart = new ChartFactory().Create(this, "Bar");
+            DataModel dataModel = new DataModel();
+            SfChart chart = new ChartFactory().Create(this, "Bar", dataModel.Question1(), dataModel.Question1());
 
 
 
@@ -57,7 +57,8 @@ namespace sBike
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SfChart chart = new ChartFactory().Create(this.Activity, "Line");
+            DataModel dataModel = new DataModel();
+            SfChart chart = new ChartFactory().Create(this.Activity, "Line", dataModel.Question1(), dataModel.Question1());
 
             return chart;
         }
