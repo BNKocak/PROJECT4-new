@@ -53,7 +53,6 @@ C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\SQLitePCL.batte
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\SQLitePCLPlugin_esqlite3.dll
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\SQLite-net.xml
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\SQLite-net.dll.mdb
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.csprojResolveAssemblyReference.cache
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.dll
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.pdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\bin\sBike.sBike.apk
@@ -75,6 +74,7 @@ C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\drawable\ic
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\R.cs.flag
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\uploadflags.txt
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\sBike.dll.mdb
+C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.csprojResolveAssemblyReference.cache
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\Java.Interop.dll.mdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\Mono.Android.dll.mdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\Mono.Data.Sqlite.dll.mdb

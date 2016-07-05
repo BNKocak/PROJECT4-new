@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Com.Syncfusion.Charts;
+using Android.Graphics;
 
 namespace sBike
 {
@@ -19,7 +20,21 @@ namespace sBike
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SfChart chart = new ChartFactory().Create(this, "Line");
+            SfChart chart = new ChartFactory().Create(this, "GroupedBar");
+
+            chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
+
+            CategoryAxis primaryAxis = new CategoryAxis();
+            NumericalAxis secondaryAxis = new NumericalAxis();
+
+            primaryAxis.Title.TextColor = Color.White;
+            primaryAxis.Title.Text = "Neighbourhood";
+
+            secondaryAxis.Title.TextColor = Color.White;
+            secondaryAxis.Title.Text = "Amount";
+
+            chart.PrimaryAxis = primaryAxis;
+            chart.SecondaryAxis = secondaryAxis;
 
             SetContentView(chart);
         }

@@ -42,11 +42,19 @@ namespace sBike
         }
 
         // Code to insert record
-        public string InsertRecord(string[] row)
+        public string InsertContainers(string[] row)
         {
             try
             {
 
+                DateTime temp_datetime;
+                //string x;
+                //if (DateTime.TryParse(row[9], out xx))
+                //{
+                //    item.MutDatum = xx.ToString("yyyyMMdd");
+                //}
+
+                temp_datetime = DateTime.Parse(row[9]);
                 Fietstrommels item = new Fietstrommels();
                 item.InvNr = row[0];
                 item.InvSrt = row[1];
@@ -57,8 +65,50 @@ namespace sBike
                 item.YCoord = float.Parse(row[6]);
                 item.Deelgemeente = row[7];
                 item.Status = row[8];
-                item.MutDatum = row[9];
+                item.MutDatum = temp_datetime.ToString("yyyy-MM-dd");
                 item.User = row[10];
+                db.Insert(item);
+                return "Records Added...";
+            }
+            catch (Exception ex)
+            {
+                return "Error : " + ex.Message;
+            }
+        }
+
+        public string InsertThefts(string[] row)
+        {
+            try
+            {
+                DateTime temp_datetime;
+                temp_datetime = DateTime.Parse(row[11]);
+
+                Fietsdiefstal item = new Fietsdiefstal();
+                item.VNr = row[0];
+                item.Kennisname = row[1];
+                item.MK = row[2];
+                item.MKOmschrijving = row[3];
+                item.Poging = row[4];
+                item.District = row[5];
+                item.Werkgebied = row[6];
+                item.Plaats = row[7];
+                item.Buurt = row[8];
+                item.Straat = row[9];
+                item.BeginDagsoort = row[10];
+                item.BeginDatum = temp_datetime.ToString("yyyy-MM-dd");
+                item.BeginTijd = row[12];
+                item.EindDagsoort = row[13];
+                item.EindDatum = row[14];
+                item.EindTijd = row[15];
+                item.GemJaar = row[16];
+                item.GemMaand = row[17];
+                item.GemDagsoort = row[18];
+                item.GemDagsoortUren = row[19];
+                item.Trefwoord = row[20];
+                item.Object = row[21];
+                item.Merk = row[22];
+                item.Type = row[23];
+                item.Kleur = row[24];
                 db.Insert(item);
                 return "Records Added...";
             }
@@ -75,10 +125,10 @@ namespace sBike
             string output = "";
             output += "Retrieving the data using ORM...";
             //var table = db.Query("SELECT COUNT(*),Deelgemeente from Fietstrommels GROUP BY Deelgemeente ORDER BY COUNT(*) DESC LIMIT 5", null);
-            var table = db.Table<Fietstrommels>();
+            var table = db.Table<Fietsdiefstal>();
             foreach (var item in table)
             {
-                output += "\n" + item.Deelgemeente + " --- ";
+                output += "\n" + item.Plaats + " --- " + item.BeginDatum;
             }
             return output;
         }
@@ -99,12 +149,38 @@ namespace sBike
             return output;
         }
 
+        public string GetVraag2()
+        {
+            string output2 = "";
+            string query_2 = "SELECT COUNT(*) as Vraag2, Deelgemeente from Fietstrommels WHERE MutDatum between '2001-01-01' and '2014-01-01'";
+            string query_3 = "select COUNT(*) as Vraag2, strftime('%m-%Y', MutDatum) as 'month_year' from Fietstrommels group by strftime('%m-%Y', MutDatum)";
+            var item = db.Query<Fietsdiefstal>(query_3);
+            foreach (var row in item)
+            {
+                output2 += "\n" + row.month_year + " --- " + row.Thefts;
+            }
+            return output2;
+        }
+
+        public string GetVraag4()
+        {
+            string output2 = "";
+            string query_1 = "SELECT DISTINCT Werkgebied FROM Fietsdiefstal";
+            string query_2 = "SELECT DISTINCT Deelgemeente FROM Fietstrommels";
+            string query_3 = "select COUNT(*) as FCount, strftime('%Y-%m', MutDatum) as 'month_year' from Fietstrommels WHERE (MutDatum between '2011-01-01' and '2016-05-07') and Deelgemeente = 'Ridderkerk' group by strftime('%Y-%m', MutDatum) order by strftime('%Y-%m', month_year)";
+            var item = db.Query<Fietsdiefstal>(query_1);
+            foreach (var row in item)
+            {
+                output2 += "\n" + row.Werkgebied + " --- " + row.Thefts;
+            }
+            return output2;
+            
+        }
+
         public void deleteData()
         {
             db.Query<Fietstrommels>("DELETE FROM Fietstrommels");
+            db.Query<Fietstrommels>("DELETE FROM Fietsdiefstal");
         }
     }
 }
-
-
-

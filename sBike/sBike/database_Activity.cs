@@ -18,7 +18,7 @@ namespace sBike
     {
         DBRepository connection = new DBRepository();
 
-        void ReadandParseData(string path, char seperator)
+        void ReadandParseData(string path, char seperator, string identifier)
         {
             var parsedData = new List<string[]>();
             string[] test = File.ReadAllLines(path);
@@ -30,9 +30,16 @@ namespace sBike
                 {
                     cnt2++;
                     string[] row = line.Split(seperator);
-                    connection.InsertRecord(row);
+                    if (identifier == "bikecontainers")
+                    {
+                        connection.InsertContainers(row);
+                    }
+                    else if (identifier == "bikethefts")
+                    {
+                        connection.InsertThefts(row);
+                    }
                 }
-                Toast.MakeText(this, "Amount of records added: in Fietsdiefstal" + cnt2.ToString(), ToastLength.Short).Show();
+                Toast.MakeText(this, "Amount of records added in " + identifier + ":" + cnt2.ToString(), ToastLength.Short).Show();
             }
         }
 
@@ -69,7 +76,7 @@ namespace sBike
         void btnGetById_Click(object sender, EventArgs e)
         {
             DBRepository dbr = new DBRepository();
-            var result = dbr.GetVraag1();
+            var result = dbr.GetVraag4();
             Toast.MakeText(this, result, ToastLength.Short).Show();
         }
         void btnGetAll_Click(object sender, EventArgs e)
@@ -100,37 +107,20 @@ namespace sBike
             //DBRepository dbr = new DBRepository();
             //string csvdir = System.Environment.CurrentDirectory;
             //ExploreDirectories("/storage/extSdCard");
-            
-            string csvpath1 = Path.Combine("/storage/extSdCard", "Fietstrommels.csv");
-            string csvpath2 = Path.Combine("/storage/extSdCard", "fietsdiefstal-rotterdam-2011-2013.csv");
-            string csvpath3 = Path.Combine("/data/data/App1.App1/files", "Fietstrommels.csv");
-
             //var x = Directory.GetDirectories(csvdir);
             //string[] test = File.ReadAllLines(csvpath);
             //string[] files = Directory.GetFiles(csvdir);
             //File.Copy("Fietstrommels.csv", csvpath);
 
-            ReadandParseData(csvpath1, ',');
-            ReadandParseData(csvpath2, ',');
-            //ReadandParseData(csvpath3, ',');
+            string csvpath1 = Path.Combine("/storage/extSdCard", "Fietstrommels.csv");
+            string csvpath2 = Path.Combine("/storage/extSdCard", "fietsdiefstal-rotterdam-2011-2013.csv");
+            string csvpath3 = Path.Combine("/data/data/sBike.sBike/files", "Fietstrommels.csv");
+            string csvpath4 = Path.Combine("/data/data/sBike.sBike/files", "fietsdiefstal-rotterdam-2011-2013.csv");
 
-            int cnt1 = 0;
-            //int cnt2 = 0;
-
-            //foreach (string[] row in parsedData1)
-            //{
-            //    cnt1++;
-            //    string result = dbr.InsertRecord(row);
-            //}
-
-            //foreach (string[] row in parsedData2)
-            //{
-            //    cnt2++;
-            //    string result = dbr.InsertRecord(row);
-            //}
-
-            //Toast.MakeText(this, "Amount of records added: in Fietstrommels " + cnt1.ToString(), ToastLength.Short).Show();
-            //Toast.MakeText(this, "Amount of records added: in Fietsdiefstal" + cnt2.ToString(), ToastLength.Short).Show();
+            //ReadandParseData(csvpath1, ',', "bikecontainers");
+            //ReadandParseData(csvpath2, ',', "bikethefts");
+            ReadandParseData(csvpath3, ',', "bikecontainers");
+            ReadandParseData(csvpath4, ',', "bikethefts");
         }
         void btnCreateTable_Click(Object sender, EventArgs e)
         {
@@ -143,15 +133,6 @@ namespace sBike
             DBRepository dbr = new DBRepository();
             var result = dbr.CreateDB();
             Toast.MakeText(this, result, ToastLength.Short).Show();
-
-        }
-        void cc(List<string[]> parseddata)
-        {
-            DBRepository dbr = new DBRepository();
-            foreach (string[] row in parseddata)
-            {
-                dbr.InsertRecord(row);
-            }
 
         }
     }

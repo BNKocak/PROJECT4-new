@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Com.Syncfusion.Charts;
+using Android.Graphics;
 
 namespace sBike
 {
@@ -20,6 +21,21 @@ namespace sBike
         {
             base.OnCreate(savedInstanceState);
             SfChart chart = new ChartFactory().Create(this, "Bar");
+
+            chart.Title.Text = "Top 5 amount of thefts per neighbourhood";
+
+            CategoryAxis primaryAxis = new CategoryAxis();
+            NumericalAxis secondaryAxis = new NumericalAxis();
+
+            primaryAxis.Title.TextColor = Color.White;
+            primaryAxis.Title.Text = "Neighbourhood";
+
+            secondaryAxis.Title.TextColor = Color.White;
+            secondaryAxis.Title.Text = "Bikecontainers";
+
+            chart.PrimaryAxis = primaryAxis;
+            chart.SecondaryAxis = secondaryAxis;
+
 
             SetContentView(chart);
         }

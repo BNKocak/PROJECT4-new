@@ -8,6 +8,7 @@ using Android.OS;
 using sBike;
 using Com.Syncfusion.Charts;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace Phoneword
 {
@@ -43,6 +44,7 @@ namespace Phoneword
             activitylist.Add(typeof(Activity7));
             activitylist.Add(typeof(database_Activity));
 
+            
 
             foreach (Button btn in buttonlist)
             {

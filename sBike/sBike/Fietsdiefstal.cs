@@ -82,6 +82,10 @@ namespace sBike
         [Column("Kleur")]
         public string Kleur { get; set; }
 
+        [Column("Thefts")]
+        public int Thefts { get; set; }
 
+        [Column("month_year")]
+        public string month_year { get; set; }
     }
 }
