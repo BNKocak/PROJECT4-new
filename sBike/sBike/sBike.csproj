@@ -67,6 +67,7 @@
     <Compile Include="Activity6.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="database_Activity.cs" />
+    <Compile Include="DBAddress.cs" />
     <Compile Include="DBRepository.cs" />
     <Compile Include="Fietsdiefstal.cs" />
     <Compile Include="Fietstrommels.cs" />
@@ -103,6 +104,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Question3_layout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Question5_layout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -6,6 +6,8 @@
   <uses-permission android:name="android.permission.WRITE_CALENDAR" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.INTERNET" />
   <application android:label="sBike" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="sBike" android:name="md5f12b7853c095c565d1b8996193be56fc.MainActivity">
@@ -27,9 +29,8 @@
     <activity android:label="Activity4" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity4" />
     <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity4_1" />
     <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity4_2" />
-    <activity android:label="Activity5" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity5" />
-    <activity android:label="Activity6" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity6" />
-    <activity android:label="Activity7" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity7" />
+    <activity android:label="Location" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity5" />
+    <activity android:label="Activity7" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity6" />
     <activity android:label="Database" android:name="md5a95236d96ab66b60d1cd57ed5eada663.database_Activity" />
     <activity android:label="@string/Vraag1" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity1" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="sBike.sBike.mono.MonoRuntimeProvider.__mono_init__" />

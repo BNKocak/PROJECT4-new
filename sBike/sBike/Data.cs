@@ -204,5 +204,39 @@ namespace sBike
 
             return DataList;
         }
+        public string GetLocation()
+        {
+            string output = "";
+            string query = "SELECT * FROM DBAddress";
+            var item = db.Query<DBAddress>(query);
+            foreach (var row in item)
+            {
+                output += row.DBLocation;
+            }
+            return output;
+        }
+
+        public string InsertAddress(string address)
+        {
+            try
+            {
+                DBAddress item = new DBAddress();
+                item.DBLocation = address;
+                db.Insert(item);
+                return "Saved location";
+            }
+            catch (Exception ex)
+            {
+                return "Error : " + ex.Message;
+            }
+        }
+
+        public string DeleteLocation()
+        {
+            string output = "Removed Location";
+            string query = "DELETE FROM DBAddress";
+            db.Query<DBAddress>(query);
+            return output;
+        }
     }
 }

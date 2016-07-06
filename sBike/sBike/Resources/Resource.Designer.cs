@@ -85,6 +85,9 @@ namespace sBike
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f060036
+			public const int DBAddressText = 2131099702;
+			
 			// aapt resource value: 0x7f06001f
 			public const int Vraag1 = 2131099679;
 			
@@ -106,14 +109,17 @@ namespace sBike
 			// aapt resource value: 0x7f060018
 			public const int addSampleEvent = 2131099672;
 			
-			// aapt resource value: 0x7f060033
-			public const int add_reminder = 2131099699;
+			// aapt resource value: 0x7f06003a
+			public const int add_reminder = 2131099706;
+			
+			// aapt resource value: 0x7f060032
+			public const int address_text = 2131099698;
 			
 			// aapt resource value: 0x7f06000a
 			public const int axisLayout = 2131099658;
 			
-			// aapt resource value: 0x7f060035
-			public const int bottom_labels = 2131099701;
+			// aapt resource value: 0x7f06003c
+			public const int bottom_labels = 2131099708;
 			
 			// aapt resource value: 0x7f06002e
 			public const int brands_button = 2131099694;
@@ -130,6 +136,9 @@ namespace sBike
 			// aapt resource value: 0x7f060017
 			public const int btnDelete = 2131099671;
 			
+			// aapt resource value: 0x7f060034
+			public const int btnDeleteAddress = 2131099700;
+			
 			// aapt resource value: 0x7f060014
 			public const int btnGetData = 2131099668;
 			
@@ -139,8 +148,14 @@ namespace sBike
 			// aapt resource value: 0x7f060013
 			public const int btnInstert = 2131099667;
 			
-			// aapt resource value: 0x7f06003b
-			public const int btnSearch = 2131099707;
+			// aapt resource value: 0x7f060033
+			public const int btnSaveAddress = 2131099699;
+			
+			// aapt resource value: 0x7f060042
+			public const int btnSearch = 2131099714;
+			
+			// aapt resource value: 0x7f060035
+			public const int btnShowLocation = 2131099701;
 			
 			// aapt resource value: 0x7f06001e
 			public const int btnTask = 2131099678;
@@ -166,17 +181,17 @@ namespace sBike
 			// aapt resource value: 0x7f06002f
 			public const int colors_button = 2131099695;
 			
-			// aapt resource value: 0x7f060036
-			public const int content = 2131099702;
+			// aapt resource value: 0x7f06003d
+			public const int content = 2131099709;
 			
 			// aapt resource value: 0x7f060009
 			public const int dataMarkerLayout = 2131099657;
 			
-			// aapt resource value: 0x7f060032
-			public const int date_display = 2131099698;
+			// aapt resource value: 0x7f060039
+			public const int date_display = 2131099705;
 			
-			// aapt resource value: 0x7f060031
-			public const int date_select_button = 2131099697;
+			// aapt resource value: 0x7f060038
+			public const int date_select_button = 2131099704;
 			
 			// aapt resource value: 0x7f06001a
 			public const int eventStartDate = 2131099674;
@@ -184,11 +199,14 @@ namespace sBike
 			// aapt resource value: 0x7f060019
 			public const int eventTitle = 2131099673;
 			
+			// aapt resource value: 0x7f060031
+			public const int get_address_button = 2131099697;
+			
 			// aapt resource value: 0x7f060006
 			public const int gridLineLayout = 2131099654;
 			
-			// aapt resource value: 0x7f060037
-			public const int gridLinesLayout = 2131099703;
+			// aapt resource value: 0x7f06003e
+			public const int gridLinesLayout = 2131099710;
 			
 			// aapt resource value: 0x7f06000f
 			public const int iconView = 2131099663;
@@ -207,6 +225,9 @@ namespace sBike
 			
 			// aapt resource value: 0x7f06000b
 			public const int legendViewGroup = 2131099659;
+			
+			// aapt resource value: 0x7f060030
+			public const int location_text = 2131099696;
 			
 			// aapt resource value: 0x7f060026
 			public const int q3_button1 = 2131099686;
@@ -232,8 +253,8 @@ namespace sBike
 			// aapt resource value: 0x7f06002d
 			public const int q3_button8 = 2131099693;
 			
-			// aapt resource value: 0x7f060030
-			public const int relativeLayout1 = 2131099696;
+			// aapt resource value: 0x7f060037
+			public const int relativeLayout1 = 2131099703;
 			
 			// aapt resource value: 0x7f060003
 			public const int rootLayout = 2131099651;
@@ -250,23 +271,23 @@ namespace sBike
 			// aapt resource value: 0x7f06001c
 			public const int textView2 = 2131099676;
 			
-			// aapt resource value: 0x7f06003c
-			public const int textView3 = 2131099708;
+			// aapt resource value: 0x7f060043
+			public const int textView3 = 2131099715;
 			
-			// aapt resource value: 0x7f060038
-			public const int thumbLayout = 2131099704;
+			// aapt resource value: 0x7f06003f
+			public const int thumbLayout = 2131099711;
 			
-			// aapt resource value: 0x7f060034
-			public const int top_labels = 2131099700;
+			// aapt resource value: 0x7f06003b
+			public const int top_labels = 2131099707;
 			
 			// aapt resource value: 0x7f06001d
 			public const int txtTask = 2131099677;
 			
-			// aapt resource value: 0x7f060039
-			public const int txtTaskID = 2131099705;
+			// aapt resource value: 0x7f060040
+			public const int txtTaskID = 2131099712;
 			
-			// aapt resource value: 0x7f06003a
-			public const int txtTaskId = 2131099706;
+			// aapt resource value: 0x7f060041
+			public const int txtTaskId = 2131099713;
 			
 			static Id()
 			{
@@ -321,22 +342,25 @@ namespace sBike
 			public const int Question4_layout = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int Question7_layout = 2130903053;
+			public const int Question5_layout = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int range_navigator_layout = 2130903054;
+			public const int Question7_layout = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int RemoveTask_Layout = 2130903055;
+			public const int range_navigator_layout = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int SearchLayout = 2130903056;
+			public const int RemoveTask_Layout = 2130903056;
 			
 			// aapt resource value: 0x7f030011
-			public const int UpdateTaskLayout = 2130903057;
+			public const int SearchLayout = 2130903057;
 			
 			// aapt resource value: 0x7f030012
-			public const int Vraag1_Layout = 2130903058;
+			public const int UpdateTaskLayout = 2130903058;
+			
+			// aapt resource value: 0x7f030013
+			public const int Vraag1_Layout = 2130903059;
 			
 			static Layout()
 			{

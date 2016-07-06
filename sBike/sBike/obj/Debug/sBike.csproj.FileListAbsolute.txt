@@ -70,13 +70,13 @@ C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\cale
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\question7_layout.xml
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\question4_layout.xml
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\question3_layout.xml
+C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\question5_layout.xml
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\main.xml
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\values\strings.xml
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\drawable\icon.png
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\R.cs.flag
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\uploadflags.txt
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\sBike.dll.mdb
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.csprojResolveAssemblyReference.cache
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\Java.Interop.dll.mdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\Mono.Android.dll.mdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\Mono.Data.Sqlite.dll.mdb

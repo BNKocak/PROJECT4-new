@@ -33,6 +33,7 @@ namespace sBike
             {
                 db.CreateTable<Fietstrommels>();
                 db.CreateTable<Fietsdiefstal>();
+                db.CreateTable<DBAddress>();
                 string result = "Table Created successfully..";
                 return result;
             }

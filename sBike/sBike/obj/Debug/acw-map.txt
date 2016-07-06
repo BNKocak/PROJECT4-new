@@ -62,14 +62,6 @@ sBike.Activity6, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity6
 sBike.Activity6, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity6
 sBike.Activity6;md5a95236d96ab66b60d1cd57ed5eada663.Activity6
 sbike.Activity6;md5a95236d96ab66b60d1cd57ed5eada663.Activity6
-sBike.fraggy, sBike;md5a95236d96ab66b60d1cd57ed5eada663.fraggy
-sBike.fraggy, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.fraggy
-sBike.fraggy;md5a95236d96ab66b60d1cd57ed5eada663.fraggy
-sbike.fraggy;md5a95236d96ab66b60d1cd57ed5eada663.fraggy
-sBike.Activity7, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity7
-sBike.Activity7, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity7
-sBike.Activity7;md5a95236d96ab66b60d1cd57ed5eada663.Activity7
-sbike.Activity7;md5a95236d96ab66b60d1cd57ed5eada663.Activity7
 sBike.DatePickerFragment, sBike;md5a95236d96ab66b60d1cd57ed5eada663.DatePickerFragment
 sBike.DatePickerFragment, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.DatePickerFragment
 sBike.DatePickerFragment;md5a95236d96ab66b60d1cd57ed5eada663.DatePickerFragment
