@@ -42,7 +42,11 @@ namespace Phoneword
             activitylist.Add(typeof(Activity6));
             activitylist.Add(typeof(database_Activity));
 
-            
+            DBRepository dbr = new DBRepository();
+            dbr.deleteData();
+            dbr.CreateDB();
+            dbr.CreateTable();
+            dbr.AddRecord(this);
 
             foreach (Button btn in buttonlist)
             {

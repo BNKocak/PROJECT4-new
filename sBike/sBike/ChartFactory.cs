@@ -52,10 +52,10 @@ namespace sBike
             {
                 var colors = new List<Integer>();
                 colors.Add(new Integer(Color.Red));
-                colors.Add(new Integer(Color.Gray));
+                colors.Add(new Integer(Color.LightCyan));
                 colors.Add(new Integer(Color.Blue));
-                colors.Add(new Integer(Color.Maroon));
-                colors.Add(new Integer(Color.Pink));
+                colors.Add(new Integer(Color.Green));
+                colors.Add(new Integer(Color.Yellow));
 
                 
 
