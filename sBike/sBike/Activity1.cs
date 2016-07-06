@@ -23,7 +23,7 @@ namespace sBike
             DataModel dataModel = new DataModel();
             SfChart chart = new ChartFactory().Create(this, "Bar", dataModel.Question1(), dataModel.Question1());
 
-            chart.Title.Text = "Top 5 amount of thefts per neighbourhood";
+            chart.Title.Text = "Top 5 amount of bikecontainers per neighbourhood";
 
             CategoryAxis primaryAxis = new CategoryAxis();
             NumericalAxis secondaryAxis = new NumericalAxis();

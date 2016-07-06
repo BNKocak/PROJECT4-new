@@ -20,24 +20,41 @@ namespace sBike
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            DataModel dataModel = new DataModel();
-            SfChart chart = new ChartFactory().Create(this, "GroupedBar", dataModel.Question3_1(), dataModel.Question3_2());
+            SetContentView(Resource.Layout.Question3_layout);
 
-            chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
+            // Our code will go here
+            List<Button> buttonlist = new List<Button>();
+            List<Type> activitylist = new List<Type>();
 
-            CategoryAxis primaryAxis = new CategoryAxis();
-            NumericalAxis secondaryAxis = new NumericalAxis();
+            buttonlist.Add(FindViewById<Button>(Resource.Id.q3_button1));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.q3_button2));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.q3_button3));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.q3_button4));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.q3_button5));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.q3_button6));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.q3_button7));
+            buttonlist.Add(FindViewById<Button>(Resource.Id.q3_button8));
 
-            primaryAxis.Title.TextColor = Color.White;
-            primaryAxis.Title.Text = "Neighbourhood";
+            activitylist.Add(typeof(Activity3_1));
+            activitylist.Add(typeof(Activity3_2));
+            activitylist.Add(typeof(Activity3_3));
+            activitylist.Add(typeof(Activity3_4));
+            activitylist.Add(typeof(Activity3_5));
+            activitylist.Add(typeof(Activity3_6));
+            activitylist.Add(typeof(Activity3_7));
+            activitylist.Add(typeof(Activity3_8));
 
-            secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Amount";
 
-            chart.PrimaryAxis = primaryAxis;
-            chart.SecondaryAxis = secondaryAxis;
 
-            SetContentView(chart);
+            foreach (Button btn in buttonlist)
+            {
+
+                btn.Click += (sender, e) =>
+                {
+                    var intent = new Intent(this, activitylist[buttonlist.IndexOf(btn)]);
+                    StartActivity(intent);
+                };
+            }
         }
     }
 }

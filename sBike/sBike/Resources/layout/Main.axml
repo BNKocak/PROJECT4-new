@@ -43,11 +43,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/Vraag5" />
     <Button
-        android:text="Het aantal gestolen fietsen per wijk (heatmap)"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Vraag6" />
-    <Button
         android:text="De dichtstbijzijnde fietstrommel + route indicatie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

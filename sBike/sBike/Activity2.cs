@@ -23,16 +23,16 @@ namespace sBike
             DataModel dataModel = new DataModel();
             SfChart chart = new ChartFactory().Create(this, "Line", dataModel.Question2(), dataModel.Question2());
 
-            chart.Title.Text = "Top 5 amount of thefts per neighbourhood";
+            chart.Title.Text = "Amount of thefts per month";
 
             CategoryAxis primaryAxis = new CategoryAxis();
             NumericalAxis secondaryAxis = new NumericalAxis();
 
             primaryAxis.Title.TextColor = Color.White;
-            primaryAxis.Title.Text = "Deelgemeente";
+            primaryAxis.Title.Text = "Date";
 
             secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Aantal fietstrommels";
+            secondaryAxis.Title.Text = "Amount";
 
             chart.PrimaryAxis = primaryAxis;
             chart.SecondaryAxis = secondaryAxis;

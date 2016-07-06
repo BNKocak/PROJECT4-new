@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.Data;
 using System.IO;
 using SQLite;
@@ -45,8 +46,7 @@ namespace sBike
         public string InsertContainers(string[] row)
         {
             try
-            {
-
+            { 
                 DateTime temp_datetime;
                 //string x;
                 //if (DateTime.TryParse(row[9], out xx))
@@ -54,7 +54,9 @@ namespace sBike
                 //    item.MutDatum = xx.ToString("yyyyMMdd");
                 //}
 
-                temp_datetime = DateTime.Parse(row[9]);
+                CultureInfo provider = CultureInfo.InvariantCulture;
+                string format = "dd-MM-yyyy";
+
                 Fietstrommels item = new Fietstrommels();
                 item.InvNr = row[0];
                 item.InvSrt = row[1];
@@ -65,9 +67,13 @@ namespace sBike
                 item.YCoord = float.Parse(row[6]);
                 item.Deelgemeente = row[7];
                 item.Status = row[8];
+                temp_datetime = DateTime.ParseExact(row[9], format, provider);
                 item.MutDatum = temp_datetime.ToString("yyyy-MM-dd");
                 item.User = row[10];
                 db.Insert(item);
+
+
+                Console.WriteLine(row);
                 return "Records Added...";
             }
             catch (Exception ex)
@@ -81,7 +87,7 @@ namespace sBike
             try
             {
                 DateTime temp_datetime;
-                temp_datetime = DateTime.Parse(row[11]);
+                CultureInfo provider = CultureInfo.InvariantCulture;
 
                 Fietsdiefstal item = new Fietsdiefstal();
                 item.VNr = row[0];
@@ -95,6 +101,7 @@ namespace sBike
                 item.Buurt = row[8];
                 item.Straat = row[9];
                 item.BeginDagsoort = row[10];
+                temp_datetime = DateTime.ParseExact(row[11], "dd/MM/yyyy", provider); ;
                 item.BeginDatum = temp_datetime.ToString("yyyy-MM-dd");
                 item.BeginTijd = row[12];
                 item.EindDagsoort = row[13];

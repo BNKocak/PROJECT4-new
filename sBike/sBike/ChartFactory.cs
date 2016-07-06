@@ -12,6 +12,7 @@ using Android.Widget;
 using Com.Syncfusion.Charts;
 using Com.Syncfusion.Charts.Enums;
 using Android.Graphics;
+using Java.Lang;
 
 namespace sBike
 {
@@ -49,6 +50,15 @@ namespace sBike
             }
             if (name == "Bar")
             {
+                var colors = new List<Integer>();
+                colors.Add(new Integer(Color.Red));
+                colors.Add(new Integer(Color.Gray));
+                colors.Add(new Integer(Color.Blue));
+                colors.Add(new Integer(Color.Maroon));
+                colors.Add(new Integer(Color.Pink));
+
+                
+
                 ColumnSeries columnSeries = (new ColumnSeries()
                 {
                     DataSource = dataModel,
@@ -58,7 +68,10 @@ namespace sBike
                 columnSeries.DataMarker.ShowLabel = true;
                 columnSeries.AnimationEnabled = true;
                 columnSeries.AnimationDuration = 2;
+                columnSeries.ColorModel.ColorPalette = ChartColorPalette.Custom;
+                columnSeries.ColorModel.CustomColors = colors;
                 chart.Series.Add(columnSeries);
+                chart.Legend.Visibility = null;
 
             }
 

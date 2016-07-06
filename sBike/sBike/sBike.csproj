@@ -16,7 +16,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -59,12 +59,12 @@
   <ItemGroup>
     <Compile Include="Activity2.cs" />
     <Compile Include="Activity3.cs" />
+    <Compile Include="Activity3_Charts.cs" />
     <Compile Include="Activity4.cs" />
     <Compile Include="Activity4_1.cs" />
     <Compile Include="Activity4_2.cs" />
     <Compile Include="Activity5.cs" />
     <Compile Include="Activity6.cs" />
-    <Compile Include="Activity7.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="database_Activity.cs" />
     <Compile Include="DBRepository.cs" />
@@ -100,6 +100,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Question4_layout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Question3_layout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

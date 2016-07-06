@@ -10,6 +10,38 @@ sBike.Activity3, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity3
 sBike.Activity3, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity3
 sBike.Activity3;md5a95236d96ab66b60d1cd57ed5eada663.Activity3
 sbike.Activity3;md5a95236d96ab66b60d1cd57ed5eada663.Activity3
+sBike.Activity3_1, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_1
+sBike.Activity3_1, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_1
+sBike.Activity3_1;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_1
+sbike.Activity3_1;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_1
+sBike.Activity3_2, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_2
+sBike.Activity3_2, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_2
+sBike.Activity3_2;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_2
+sbike.Activity3_2;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_2
+sBike.Activity3_3, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_3
+sBike.Activity3_3, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_3
+sBike.Activity3_3;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_3
+sbike.Activity3_3;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_3
+sBike.Activity3_4, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_4
+sBike.Activity3_4, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_4
+sBike.Activity3_4;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_4
+sbike.Activity3_4;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_4
+sBike.Activity3_5, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_5
+sBike.Activity3_5, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_5
+sBike.Activity3_5;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_5
+sbike.Activity3_5;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_5
+sBike.Activity3_6, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_6
+sBike.Activity3_6, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_6
+sBike.Activity3_6;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_6
+sbike.Activity3_6;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_6
+sBike.Activity3_7, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_7
+sBike.Activity3_7, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_7
+sBike.Activity3_7;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_7
+sbike.Activity3_7;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_7
+sBike.Activity3_8, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_8
+sBike.Activity3_8, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_8
+sBike.Activity3_8;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_8
+sbike.Activity3_8;md5a95236d96ab66b60d1cd57ed5eada663.Activity3_8
 sBike.Activity4, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity4
 sBike.Activity4, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity4
 sBike.Activity4;md5a95236d96ab66b60d1cd57ed5eada663.Activity4

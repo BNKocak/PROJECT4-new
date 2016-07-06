@@ -16,6 +16,14 @@
     </activity>
     <activity android:label="Activity2" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity2" />
     <activity android:label="Activity3" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity3" />
+    <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity3_1" />
+    <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity3_2" />
+    <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity3_3" />
+    <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity3_4" />
+    <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity3_5" />
+    <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity3_6" />
+    <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity3_7" />
+    <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity3_8" />
     <activity android:label="Activity4" android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity4" />
     <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity4_1" />
     <activity android:name="md5a95236d96ab66b60d1cd57ed5eada663.Activity4_2" />
