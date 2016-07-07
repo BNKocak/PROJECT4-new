@@ -44,6 +44,7 @@ namespace sBike
             _addReminderButton.Click += (sender, eventArgs) =>
             {
                 InitAddEvent();
+                Toast.MakeText(this, "Reminder added at " + _dateDisplay.Text, ToastLength.Short).Show();
             };
         }
 
@@ -63,6 +64,8 @@ namespace sBike
 
             eventValues.Put(CalendarContract.Events.InterfaceConsts.EventTimezone, "UTC");
             eventValues.Put(CalendarContract.Events.InterfaceConsts.EventEndTimezone, "UTC");
+
+
 
             var uri = ContentResolver.Insert(CalendarContract.Events.ContentUri, eventValues);
             Console.WriteLine("Uri for new event: {0}", uri);

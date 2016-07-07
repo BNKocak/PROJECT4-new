@@ -21,8 +21,13 @@
     <TextView
         android:text="Select a Date"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/date_display" />
+        android:layout_height="58.5dp"
+        android:id="@+id/date_display"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="19dp" />
     <Button
         android:text="Add Reminder"
         android:layout_width="match_parent"

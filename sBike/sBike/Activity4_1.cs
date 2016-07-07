@@ -23,7 +23,7 @@ namespace sBike
             DataModel dataModel = new DataModel();
             SfChart chart = new ChartFactory().Create(this, "Pie", dataModel.Question4_1(), dataModel.Question4_1());
 
-            chart.Title.Text = "Top 5 stolen bike Brands";
+            chart.Title.Text = "Top 10 stolen bike Brands";
 
             CategoryAxis primaryAxis = new CategoryAxis();
             NumericalAxis secondaryAxis = new NumericalAxis();

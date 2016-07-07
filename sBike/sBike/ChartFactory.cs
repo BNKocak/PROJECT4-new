@@ -18,8 +18,6 @@ namespace sBike
 {
     class ChartFactory
     {
-        private ZoomMode x;
-
         public SfChart Create(Activity source, string name, ObservableArrayList dataModel, ObservableArrayList dataModel_2)
         {
             SfChart chart = new SfChart(source);

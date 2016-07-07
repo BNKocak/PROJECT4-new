@@ -204,7 +204,7 @@ namespace sBike
         public ObservableArrayList Question4_1()
         {
             ObservableArrayList DataList = new ObservableArrayList();
-            string query = "SELECT COUNT(*) as Brands, Merk from Fietsdiefstal GROUP BY Merk ORDER BY COUNT(*) DESC LIMIT 15";
+            string query = "SELECT COUNT(*) as Brands, Merk from Fietsdiefstal GROUP BY Merk ORDER BY COUNT(*) DESC LIMIT 10";
             var item = db.Query<Fietsdiefstal>(query);
             foreach (var row in item)
             {
@@ -216,7 +216,7 @@ namespace sBike
         public ObservableArrayList Question4_2()
         {
             ObservableArrayList DataList = new ObservableArrayList();
-            string query = "SELECT COUNT(*) as Colors, Kleur from Fietsdiefstal GROUP BY Kleur ORDER BY COUNT(*) DESC LIMIT 15";
+            string query = "SELECT COUNT(*) as Colors, Kleur from Fietsdiefstal GROUP BY Kleur ORDER BY COUNT(*) DESC LIMIT 10";
             var item = db.Query<Fietsdiefstal>(query);
             foreach (var row in item)
             {

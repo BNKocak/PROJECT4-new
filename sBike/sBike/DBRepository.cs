@@ -45,50 +45,9 @@ namespace sBike
             }
         }
 
-        // Code to insert record
-        public string InsertContainers(string[] row)
-        {
-            try
-            { 
-                DateTime temp_datetime;
-                //string x;
-                //if (DateTime.TryParse(row[9], out xx))
-                //{
-                //    item.MutDatum = xx.ToString("yyyyMMdd");
-                //}
-
-                CultureInfo provider = CultureInfo.InvariantCulture;
-                string format = "dd-MM-yyyy";
-
-                Fietstrommels item = new Fietstrommels();
-                item.InvNr = row[0];
-                item.InvSrt = row[1];
-                item.Omschrijving = row[2];
-                item.Straat = row[3];
-                item.Thv = row[4];
-                item.XCoord = float.Parse(row[5]);
-                item.YCoord = float.Parse(row[6]);
-                item.Deelgemeente = row[7];
-                item.Status = row[8];
-                temp_datetime = DateTime.ParseExact(row[9], format, provider);
-                item.MutDatum = temp_datetime.ToString("yyyy-MM-dd");
-                item.User = row[10];
-                db.Insert(item);
-
-
-                Console.WriteLine(row);
-                return "Records Added...";
-            }
-            catch (Exception ex)
-            {
-                return "Error : " + ex.Message;
-            }
-        }
-
         void ReadandParseData(string path, char seperator, string identifier, Activity src)
         {
             var parsedData = new List<string[]>();
-            //string[] test = File.ReadAllLines(path);
             int cnt2 = 0;
             AssetManager assets = src.Assets;
             using (var sr = new StreamReader(assets.Open(path)))
@@ -104,11 +63,6 @@ namespace sBike
                         try
                         {
                             DateTime temp_datetime;
-                            //string x;
-                            //if (DateTime.TryParse(row[9], out xx))
-                            //{
-                            //    item.MutDatum = xx.ToString("yyyyMMdd");
-                            //}
 
                             CultureInfo provider = CultureInfo.InvariantCulture;
                             string format = "dd-MM-yyyy";
@@ -179,7 +133,39 @@ namespace sBike
                     }
                 }
                 db.Commit();
-                //Toast.MakeText(this, "Amount of records added in " + identifier + ":" + cnt2.ToString(), ToastLength.Short).Show();
+            }
+        }
+        public string InsertContainers(string[] row)
+        {
+            try
+            {
+                DateTime temp_datetime;
+
+                CultureInfo provider = CultureInfo.InvariantCulture;
+                string format = "dd-MM-yyyy";
+
+                Fietstrommels item = new Fietstrommels();
+                item.InvNr = row[0];
+                item.InvSrt = row[1];
+                item.Omschrijving = row[2];
+                item.Straat = row[3];
+                item.Thv = row[4];
+                item.XCoord = float.Parse(row[5]);
+                item.YCoord = float.Parse(row[6]);
+                item.Deelgemeente = row[7];
+                item.Status = row[8];
+                temp_datetime = DateTime.ParseExact(row[9], format, provider);
+                item.MutDatum = temp_datetime.ToString("yyyy-MM-dd");
+                item.User = row[10];
+                db.Insert(item);
+
+
+                Console.WriteLine(row);
+                return "Records Added...";
+            }
+            catch (Exception ex)
+            {
+                return "Error : " + ex.Message;
             }
         }
         public string InsertThefts(string[] row)
@@ -237,75 +223,8 @@ namespace sBike
             //File.Copy("Fietstrommels.csv", csvpath);
 
             //string csvpath1 = Path.Combine("/storage/extSdCard", "Fietstrommels.csv");
-            //string csvpath2 = Path.Combine("/storage/extSdCard", "fietsdiefstal-rotterdam-2011-2013.csv");
-            //string csvpath3 = Path.Combine("/data/data/sBike.sBike/files", "Fietstrommels.csv");
-            //string csvpath4 = Path.Combine("/data/data/sBike.sBike/files", "fietsdiefstal-rotterdam-2011-2013.csv");
-
-            //ReadandParseData(csvpath1, ',', "bikecontainers");
-            //ReadandParseData(csvpath2, ',', "bikethefts");
             ReadandParseData("Fietstrommels.csv", ',', "bikecontainers", src);
             ReadandParseData("fietsdiefstal-rotterdam-2011-2013.csv", ',', "bikethefts", src);
-        }
-
-        //code to retrieve all the records
-        public string GetAllRecords()
-        {
-
-            string output = "";
-            output += "Retrieving the data using ORM...";
-            var table = db.Query<Fietstrommels>("SELECT COUNT(*) as FCount from Fietstrommels");
-            //var table = db.Table<Fietsdiefstal>();
-            foreach (var item in table)
-            {
-                output += "\n" + item.FCount + " --- " + item.Deelgemeente;
-            }
-            return output;
-        }
-
-        //code to receive vraag 1 data
-        public string GetVraag1()
-        {
-            string output = "";
-            string query = "SELECT COUNT(*) as FCount,Deelgemeente from Fietstrommels GROUP BY Deelgemeente ORDER BY COUNT(*) DESC LIMIT 5";
-            int i = 0;
-            int[] FCount = { 222, 168, 88, 78, 56 };
-            var item = db.Query<Fietstrommels>(query);
-            foreach (var row in item)
-            {
-                output += "\n" + row.Deelgemeente + " --- " + row.FCount;
-                i++;
-            }
-            return output;
-        }
-
-        public string GetVraag2()
-        {
-            string output2 = "";
-            string query_2 = "SELECT COUNT(*) as Vraag2, Deelgemeente from Fietstrommels WHERE MutDatum between '2001-01-01' and '2014-01-01'";
-            string query_3 = "select COUNT(*) as Vraag2, strftime('%m-%Y', MutDatum) as 'month_year' from Fietstrommels group by strftime('%m-%Y', MutDatum)";
-            var item = db.Query<Fietsdiefstal>(query_3);
-            foreach (var row in item)
-            {
-                output2 += "\n" + row.month_year + " --- " + row.Thefts;
-            }
-            return output2;
-        }
-
-        public string GetVraag4()
-        {
-            string output2 = "";
-            string query = "SELECT COUNT(*) as Thefts, Werkgebied FROM Fietsdiefstal GROUP BY Werkgebied";
-            string query_1 = "SELECT DISTINCT Werkgebied FROM Fietsdiefstal";
-            string query_2 = "select COUNT(*) as Vraag2, strftime('%m-%Y', MutDatum) as 'month_year' from Fietstrommels group by strftime('%m-%Y', MutDatum)";
-            string query_3 = "select COUNT(*) as FCount, strftime('%Y-%m', MutDatum) as 'month_year' from Fietstrommels WHERE (MutDatum between '2011-01-01' and '2016-05-07') group by strftime('%Y-%m', MutDatum) order by strftime('%Y-%m', month_year)";
-            var item = db.Query<Fietstrommels>(query_3);
-            foreach (var row in item)
-            {
-                output2 += "\n" + row.month_year + "---" + row.FCount;
-            }
-            Console.Write(output2);
-            return output2;
-
         }
 
         public void deleteData()
