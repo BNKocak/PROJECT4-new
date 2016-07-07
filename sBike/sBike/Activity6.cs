@@ -56,8 +56,8 @@ namespace sBike
             // Create Event code
             ContentValues eventValues = new ContentValues();
             eventValues.Put(CalendarContract.Events.InterfaceConsts.CalendarId, 1);
-            eventValues.Put(CalendarContract.Events.InterfaceConsts.Title, "Test Activity7");
-            eventValues.Put(CalendarContract.Events.InterfaceConsts.Description, "This is an event created from Mono for Android");
+            eventValues.Put(CalendarContract.Events.InterfaceConsts.Title, "Pick up bike");
+            eventValues.Put(CalendarContract.Events.InterfaceConsts.Description, "Don't forget to pick up my bike");
             eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtstart, GetDateTimeMS(tempfrag.Year, tempfrag.Month, tempfrag.Day, tempfrag.Hour, tempfrag.Minute));
             eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtend, GetDateTimeMS(tempfrag.Year, tempfrag.Month, tempfrag.Day, tempfrag.Hour, tempfrag.Minute));
 
@@ -113,7 +113,7 @@ namespace sBike
         public override Dialog OnCreateDialog(Bundle savedInstanceState)
         {
             DateTime currently = DateTime.Now;
-            DatePickerDialog dialog = new DatePickerDialog(Activity, this, currently.Year, currently.Month,
+            DatePickerDialog dialog = new DatePickerDialog(Activity, this, currently.Year, currently.Month - 1,
                                                            currently.Day);
             return dialog;
         }
