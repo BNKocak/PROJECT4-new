@@ -4,53 +4,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:text="Welkom bij Fiets Info Rotterdam."
+        android:text="                       Welcome to sBike"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1" />
     <TextView
-        android:text="Wat wilt je weten?"
+        android:text="                                  What would you like to know?"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
         android:layout_marginTop="10px" />
     <Button
-        android:text="De 5 buurten met de meeste fietstrommels"
+        android:text="Biggest amount of bike containers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Vraag1"
         android:layout_marginTop="10px" />
     <Button
-        android:text="Het aantal gestolen fietsen per maand"
+        android:text="Bike theft per month"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Vraag2" />
     <Button
-        android:text="Het aantal gestolen fietsen per geplaatste fietstrommel in een buurt naar keuze"
+        android:text="Per district thefts and installed containers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Vraag3" />
     <Button
-        android:text="De meest gestolen fiets merken en kleuren"
+        android:text="Most stolen brands and colours"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Vraag4" />
     <Button
-        android:text="Uw huidige locatie"
+        android:text="Save location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Vraag5" />
     <Button
-        android:text="De dichtstbijzijnde fietstrommel + route indicatie"
+        android:text="Calendar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Vraag7" />
-    <Button
+<!--<Button
         android:text="Database Management"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnDatabase"
-        android:layout_marginTop="70px" />
+        android:layout_marginTop="70px" />-->
 </LinearLayout>
