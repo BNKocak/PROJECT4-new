@@ -14,7 +14,7 @@ using Android.Graphics;
 
 namespace sBike
 {
-    [Activity(Label = "Activity2")]
+    [Activity(Label = "sBike")]
     public class Activity2 : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

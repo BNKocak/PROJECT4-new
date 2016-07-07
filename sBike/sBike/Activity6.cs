@@ -16,7 +16,7 @@ using Android.Provider;
 
 namespace sBike
 {
-    [Activity(Label = "Activity7")]
+    [Activity(Label = "sBike")]
     public class Activity6 : Activity
     {
         TextView _dateDisplay;

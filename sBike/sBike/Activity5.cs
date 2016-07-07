@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace sBike
 {
-    [Activity(Label = "Location")]
+    [Activity(Label = "sBike")]
     public class Activity5 : Activity, ILocationListener
     {
         static readonly string TAG = "X:" + typeof(Activity5).Name;

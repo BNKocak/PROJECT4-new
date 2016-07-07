@@ -56,17 +56,6 @@ C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\SQLite-net.dll.
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.dll
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.pdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\bin\sBike.sBike.apk
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\removetask_layout.xml
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\searchlayout.xml
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\updatetasklayout.xml
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\vraag1_layout.xml
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\database.xml
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\inserttasklayout.xml
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\calendarlist.xml
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\callistitem.xml
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\eventlist.xml
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\eventlistitem.xml
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\calendar.xml
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\question7_layout.xml
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\question4_layout.xml
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\layout\question3_layout.xml
@@ -112,7 +101,6 @@ C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\assets\
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.csprojResolveAssemblyReference.cache
-C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.dll.mdb
 C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.csprojResolveAssemblyReference.cache
 C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.dll
 C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.pdb
@@ -172,4 +160,5 @@ C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\androi
 C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.dll.mdb
-C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\sBike.dll.mdb
+C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.dll.mdb
+C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\sBike.dll.mdb
