@@ -5,6 +5,7 @@ using SQLite;
 
 namespace sBike
 {
+    // Datamodel of rows in database for BikeThefts
     class Fietsdiefstal
     {
         [Column("VNr")]

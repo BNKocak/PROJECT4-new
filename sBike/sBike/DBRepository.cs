@@ -45,6 +45,7 @@ namespace sBike
             }
         }
 
+        // Parser, using db.BeginTransaction() and db.Commit() to speed up database insertion. Using AssetManager to acces csv files.
         void ReadandParseData(string path, char seperator, string identifier, Activity src)
         {
             var parsedData = new List<string[]>();
@@ -70,6 +71,8 @@ namespace sBike
                 db.Commit();
             }
         }
+
+        // Filling datamodel with parsed data for BikeContainersthefts -> Fietstrommels and using db.Insert to insert into database.
         public string InsertContainers(string[] row)
         {
             try
@@ -103,6 +106,8 @@ namespace sBike
                 return "Error : " + ex.Message;
             }
         }
+
+        // Filling datamodel with parsed data for Bikethefts -> Fietsdiefstal-rotterdam and using db.Insert to insert into database.
         public string InsertThefts(string[] row)
         {
             try
@@ -146,6 +151,7 @@ namespace sBike
             }
         }
 
+        // Calling the Parser in order to insert all data to database
         public void AddRecord(Activity src)
         {
             //StartActivity(typeof(InsertTask_Activity));
@@ -162,6 +168,7 @@ namespace sBike
             ReadandParseData("fietsdiefstal-rotterdam-2011-2013.csv", ',', "bikethefts", src);
         }
 
+        // Delete all data
         public void deleteData()
         {
             db.Query<Fietstrommels>("DELETE FROM Fietstrommels");

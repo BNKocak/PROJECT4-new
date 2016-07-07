@@ -99,6 +99,18 @@ namespace sBike
                 columnSeries_2.AnimationDuration = 2;
                 columnSeries_2.ColorModel.ColorPalette = ChartColorPalette.Custom;
                 columnSeries_2.ColorModel.CustomColors = colors;
+
+                chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
+
+                CategoryAxis primaryAxis = new CategoryAxis();
+                NumericalAxis secondaryAxis = new NumericalAxis();
+                primaryAxis.Title.TextColor = Color.White;
+                primaryAxis.Title.Text = "Date (2011-2013)";
+                secondaryAxis.Title.TextColor = Color.White;
+                secondaryAxis.Title.Text = "Amount";
+
+                chart.PrimaryAxis = primaryAxis;
+                chart.SecondaryAxis = secondaryAxis;
                 chart.Series.Add(columnSeries_1);
                 chart.Series.Add(columnSeries_2);
             }

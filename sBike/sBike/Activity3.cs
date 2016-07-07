@@ -17,12 +17,13 @@ namespace sBike
     [Activity(Label = "sBike")]
     public class Activity3 : Activity
     {
+        // Create the activity
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Question3_layout);
 
-            // Our code will go here
+            // Make list of buttons and activities
             List<Button> buttonlist = new List<Button>();
             List<Type> activitylist = new List<Type>();
 
@@ -45,7 +46,7 @@ namespace sBike
             activitylist.Add(typeof(Activity3_8));
 
 
-
+            // foreach button connect a activity for event onClick
             foreach (Button btn in buttonlist)
             {
 

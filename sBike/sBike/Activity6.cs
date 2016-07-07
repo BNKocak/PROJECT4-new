@@ -19,6 +19,8 @@ namespace sBike
     [Activity(Label = "sBike")]
     public class Activity6 : Activity
     {
+        // Create the activity
+
         TextView _dateDisplay;
         Button _dateSelectButton;
         Button _addReminderButton;
@@ -29,6 +31,7 @@ namespace sBike
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Question7_layout);
 
+            // Load buttons and events
             _addReminderButton = FindViewById<Button>(Resource.Id.add_reminder);
             _dateDisplay = FindViewById<TextView>(Resource.Id.date_display);
             _dateSelectButton = FindViewById<Button>(Resource.Id.date_select_button);
@@ -68,10 +71,13 @@ namespace sBike
 
 
             var uri = ContentResolver.Insert(CalendarContract.Events.ContentUri, eventValues);
+
+            // Debugging purposes
             Console.WriteLine("Uri for new event: {0}", uri);
         }
 
 
+        // Used because necessary
         long GetDateTimeMS(int yr, int month, int day, int hr, int min)
         {
             Calendar c = Calendar.GetInstance(Java.Util.TimeZone.Default);
@@ -89,7 +95,7 @@ namespace sBike
 
     public class DatePickerFragment : DialogFragment, DatePickerDialog.IOnDateSetListener
     {
-        // TAG can be any string that you desire.
+        // Setting Tag on fragment in order to call
         public static readonly string TAG = "X:" + typeof(DatePickerFragment).Name.ToUpper();
         Action<DateTime> _dateSelectedHandler = delegate { };
         public DateTime date;
@@ -97,6 +103,7 @@ namespace sBike
         public void OnDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth)
         {
             // Note: monthOfYear is a value between 0 and 11, not 1 and 12!
+            // Set date to selectedDate in order to use it in function above for saving event.
             DateTime selectedDate = new DateTime(year, monthOfYear + 1, dayOfMonth);
             date = selectedDate;
             Log.Debug(TAG, selectedDate.ToLongDateString());
