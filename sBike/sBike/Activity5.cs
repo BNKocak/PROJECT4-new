@@ -15,6 +15,7 @@ namespace sBike
     [Activity(Label = "sBike")]
     public class Activity5 : Activity, ILocationListener
     {
+        // Adding instance variables
         static readonly string TAG = "X:" + typeof(Activity5).Name;
         TextView _addressText;
         TextView savedAddress;
@@ -50,8 +51,8 @@ namespace sBike
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Question5_layout);
-            // Create your application here
 
+            // Handler for button clicks
             savedAddress = FindViewById<TextView>(Resource.Id.DBAddressText);
             Button btnSaveAddress = FindViewById<Button>(Resource.Id.btnSaveAddress);
             Button btnDeleteAddress = FindViewById<Button>(Resource.Id.btnDeleteAddress);
@@ -70,6 +71,8 @@ namespace sBike
 
         void InitializeLocationManager()
         {
+            // LocationManager listens for GPS updates from device and notifies the application via events.
+            // Location provider is chosen via Criteria and then provided for LocationManager.
             _locationManager = (LocationManager)GetSystemService(LocationService);
             Criteria criteriaForLocationService = new Criteria
             {
@@ -90,6 +93,7 @@ namespace sBike
 
         protected override void OnResume()
         {
+            // Activity5 will begin listening to LocationManager when this activity is accessed.
             base.OnResume();
             _locationManager.RequestLocationUpdates(_locationProvider, 0, 0, this);
             Log.Debug(TAG, "Listening for location updates using " + _locationProvider + ".");
@@ -97,6 +101,8 @@ namespace sBike
 
         protected override void OnPause()
         {
+            // Activity5 will stop listening to LocationManager when this activity is not being accessed.
+            // This reduces battery usage.
             base.OnPause();
             _locationManager.RemoveUpdates(this);
             Log.Debug(TAG, "No longer listening for location updates.");
@@ -133,7 +139,7 @@ namespace sBike
                 {
                     deviceAddress.AppendLine(address.GetAddressLine(i));
                 }
-                // Remove the last comma from the end of the address.
+               
                 _addressText.Text = deviceAddress.ToString();
             }
             else
