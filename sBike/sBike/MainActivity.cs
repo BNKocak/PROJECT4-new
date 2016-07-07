@@ -32,7 +32,6 @@ namespace Phoneword
             buttonlist.Add(FindViewById<Button>(Resource.Id.Vraag4));
             buttonlist.Add(FindViewById<Button>(Resource.Id.Vraag5));
             buttonlist.Add(FindViewById<Button>(Resource.Id.Vraag7));
-            buttonlist.Add(FindViewById<Button>(Resource.Id.btnDatabase));
 
             activitylist.Add(typeof(Activity1));
             activitylist.Add(typeof(Activity2));
@@ -40,7 +39,6 @@ namespace Phoneword
             activitylist.Add(typeof(Activity4));
             activitylist.Add(typeof(Activity5));
             activitylist.Add(typeof(Activity6));
-            activitylist.Add(typeof(database_Activity));
 
             DBRepository dbr = new DBRepository();
             dbr.deleteData();

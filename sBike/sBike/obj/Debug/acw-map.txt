@@ -66,10 +66,6 @@ sBike.DatePickerFragment, sBike;md5a95236d96ab66b60d1cd57ed5eada663.DatePickerFr
 sBike.DatePickerFragment, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.DatePickerFragment
 sBike.DatePickerFragment;md5a95236d96ab66b60d1cd57ed5eada663.DatePickerFragment
 sbike.DatePickerFragment;md5a95236d96ab66b60d1cd57ed5eada663.DatePickerFragment
-sBike.database_Activity, sBike;md5a95236d96ab66b60d1cd57ed5eada663.database_Activity
-sBike.database_Activity, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.database_Activity
-sBike.database_Activity;md5a95236d96ab66b60d1cd57ed5eada663.database_Activity
-sbike.database_Activity;md5a95236d96ab66b60d1cd57ed5eada663.database_Activity
 sBike.Activity1, sBike;md5a95236d96ab66b60d1cd57ed5eada663.Activity1
 sBike.Activity1, sBike, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a95236d96ab66b60d1cd57ed5eada663.Activity1
 sBike.Activity1;md5a95236d96ab66b60d1cd57ed5eada663.Activity1

@@ -37,7 +37,6 @@ namespace sBike
             chart.PrimaryAxis = primaryAxis;
             chart.SecondaryAxis = secondaryAxis;
 
-
             SetContentView(chart);
         }
     }

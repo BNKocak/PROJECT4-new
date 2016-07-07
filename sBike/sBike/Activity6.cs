@@ -61,14 +61,11 @@ namespace sBike
             eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtstart, GetDateTimeMS(tempfrag.Year, tempfrag.Month, tempfrag.Day, tempfrag.Hour, tempfrag.Minute));
             eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtend, GetDateTimeMS(tempfrag.Year, tempfrag.Month, tempfrag.Day, tempfrag.Hour, tempfrag.Minute));
 
-            // GitHub issue #9 : Event start and end times need timezone support.
-            // https://github.com/xamarin/monodroid-samples/issues/9
             eventValues.Put(CalendarContract.Events.InterfaceConsts.EventTimezone, "UTC");
             eventValues.Put(CalendarContract.Events.InterfaceConsts.EventEndTimezone, "UTC");
 
             var uri = ContentResolver.Insert(CalendarContract.Events.ContentUri, eventValues);
             Console.WriteLine("Uri for new event: {0}", uri);
-            
         }
 
 

@@ -66,7 +66,6 @@
     <Compile Include="Activity5.cs" />
     <Compile Include="Activity6.cs" />
     <Compile Include="Data.cs" />
-    <Compile Include="database_Activity.cs" />
     <Compile Include="DBAddress.cs" />
     <Compile Include="DBRepository.cs" />
     <Compile Include="Fietsdiefstal.cs" />
@@ -90,19 +89,6 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\RemoveTask_Layout.axml" />
-    <AndroidResource Include="Resources\layout\SearchLayout.axml" />
-    <AndroidResource Include="Resources\layout\UpdateTaskLayout.axml" />
-    <AndroidResource Include="Resources\layout\Vraag1_Layout.axml" />
-    <AndroidResource Include="Resources\layout\Database.axml" />
-    <AndroidResource Include="Resources\layout\InsertTaskLayout.axml" />
-    <AndroidResource Include="Resources\layout\CalendarList.axml" />
-    <AndroidResource Include="Resources\layout\CalListItem.axml" />
-    <AndroidResource Include="Resources\layout\EventList.axml" />
-    <AndroidResource Include="Resources\layout\EventListItem.axml" />
-    <AndroidResource Include="Resources\layout\Calendar.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\Question7_layout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
