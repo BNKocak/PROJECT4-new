@@ -160,5 +160,6 @@ C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\androi
 C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Burhan Kocak\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.dll.mdb
+C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\res\drawable\skyline.png
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\obj\Debug\sBike.dll.mdb
 C:\Users\zEz\Documents\GitHub\PROJECT4-new\sBike\sBike\bin\Debug\sBike.dll.mdb

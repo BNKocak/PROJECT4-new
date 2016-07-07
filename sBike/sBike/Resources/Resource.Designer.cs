@@ -72,6 +72,9 @@ namespace sBike
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
 			
+			// aapt resource value: 0x7f020001
+			public const int skyline = 2130837505;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -85,8 +88,8 @@ namespace sBike
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060026
-			public const int DBAddressText = 2131099686;
+			// aapt resource value: 0x7f060027
+			public const int DBAddressText = 2131099687;
 			
 			// aapt resource value: 0x7f060010
 			public const int Vraag1 = 2131099664;
@@ -106,29 +109,29 @@ namespace sBike
 			// aapt resource value: 0x7f060015
 			public const int Vraag7 = 2131099669;
 			
-			// aapt resource value: 0x7f06002a
-			public const int add_reminder = 2131099690;
+			// aapt resource value: 0x7f06002b
+			public const int add_reminder = 2131099691;
 			
-			// aapt resource value: 0x7f060022
-			public const int address_text = 2131099682;
+			// aapt resource value: 0x7f060023
+			public const int address_text = 2131099683;
 			
 			// aapt resource value: 0x7f060007
 			public const int axisLayout = 2131099655;
 			
-			// aapt resource value: 0x7f06002c
-			public const int bottom_labels = 2131099692;
+			// aapt resource value: 0x7f06002d
+			public const int bottom_labels = 2131099693;
 			
-			// aapt resource value: 0x7f06001e
-			public const int brands_button = 2131099678;
-			
-			// aapt resource value: 0x7f060024
-			public const int btnDeleteAddress = 2131099684;
-			
-			// aapt resource value: 0x7f060023
-			public const int btnSaveAddress = 2131099683;
+			// aapt resource value: 0x7f06001f
+			public const int brands_button = 2131099679;
 			
 			// aapt resource value: 0x7f060025
-			public const int btnShowLocation = 2131099685;
+			public const int btnDeleteAddress = 2131099685;
+			
+			// aapt resource value: 0x7f060024
+			public const int btnSaveAddress = 2131099684;
+			
+			// aapt resource value: 0x7f060026
+			public const int btnShowLocation = 2131099686;
 			
 			// aapt resource value: 0x7f060002
 			public const int chartAreaLayout = 2131099650;
@@ -136,32 +139,35 @@ namespace sBike
 			// aapt resource value: 0x7f060001
 			public const int chartTitle = 2131099649;
 			
-			// aapt resource value: 0x7f06001f
-			public const int colors_button = 2131099679;
+			// aapt resource value: 0x7f060020
+			public const int colors_button = 2131099680;
 			
-			// aapt resource value: 0x7f06002d
-			public const int content = 2131099693;
+			// aapt resource value: 0x7f06002e
+			public const int content = 2131099694;
 			
 			// aapt resource value: 0x7f060006
 			public const int dataMarkerLayout = 2131099654;
 			
+			// aapt resource value: 0x7f06002a
+			public const int date_display = 2131099690;
+			
 			// aapt resource value: 0x7f060029
-			public const int date_display = 2131099689;
+			public const int date_select_button = 2131099689;
 			
-			// aapt resource value: 0x7f060028
-			public const int date_select_button = 2131099688;
-			
-			// aapt resource value: 0x7f060021
-			public const int get_address_button = 2131099681;
+			// aapt resource value: 0x7f060022
+			public const int get_address_button = 2131099682;
 			
 			// aapt resource value: 0x7f060003
 			public const int gridLineLayout = 2131099651;
 			
-			// aapt resource value: 0x7f06002e
-			public const int gridLinesLayout = 2131099694;
+			// aapt resource value: 0x7f06002f
+			public const int gridLinesLayout = 2131099695;
 			
 			// aapt resource value: 0x7f06000c
 			public const int iconView = 2131099660;
+			
+			// aapt resource value: 0x7f060016
+			public const int imgSkyline = 2131099670;
 			
 			// aapt resource value: 0x7f06000d
 			public const int label = 2131099661;
@@ -178,35 +184,35 @@ namespace sBike
 			// aapt resource value: 0x7f060008
 			public const int legendViewGroup = 2131099656;
 			
-			// aapt resource value: 0x7f060020
-			public const int location_text = 2131099680;
-			
-			// aapt resource value: 0x7f060016
-			public const int q3_button1 = 2131099670;
+			// aapt resource value: 0x7f060021
+			public const int location_text = 2131099681;
 			
 			// aapt resource value: 0x7f060017
-			public const int q3_button2 = 2131099671;
+			public const int q3_button1 = 2131099671;
 			
 			// aapt resource value: 0x7f060018
-			public const int q3_button3 = 2131099672;
+			public const int q3_button2 = 2131099672;
 			
 			// aapt resource value: 0x7f060019
-			public const int q3_button4 = 2131099673;
+			public const int q3_button3 = 2131099673;
 			
 			// aapt resource value: 0x7f06001a
-			public const int q3_button5 = 2131099674;
+			public const int q3_button4 = 2131099674;
 			
 			// aapt resource value: 0x7f06001b
-			public const int q3_button6 = 2131099675;
+			public const int q3_button5 = 2131099675;
 			
 			// aapt resource value: 0x7f06001c
-			public const int q3_button7 = 2131099676;
+			public const int q3_button6 = 2131099676;
 			
 			// aapt resource value: 0x7f06001d
-			public const int q3_button8 = 2131099677;
+			public const int q3_button7 = 2131099677;
 			
-			// aapt resource value: 0x7f060027
-			public const int relativeLayout1 = 2131099687;
+			// aapt resource value: 0x7f06001e
+			public const int q3_button8 = 2131099678;
+			
+			// aapt resource value: 0x7f060028
+			public const int relativeLayout1 = 2131099688;
 			
 			// aapt resource value: 0x7f060000
 			public const int rootLayout = 2131099648;
@@ -223,11 +229,11 @@ namespace sBike
 			// aapt resource value: 0x7f06000f
 			public const int textView2 = 2131099663;
 			
-			// aapt resource value: 0x7f06002f
-			public const int thumbLayout = 2131099695;
+			// aapt resource value: 0x7f060030
+			public const int thumbLayout = 2131099696;
 			
-			// aapt resource value: 0x7f06002b
-			public const int top_labels = 2131099691;
+			// aapt resource value: 0x7f06002c
+			public const int top_labels = 2131099692;
 			
 			static Id()
 			{

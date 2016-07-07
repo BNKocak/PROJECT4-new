@@ -3,4 +3,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnDatabase"
-        android:layout_marginTop="70px" />--></LinearLayout>
+        android:layout_marginTop="70px" />--><ImageView android:src="@drawable/skyline" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/imgSkyline" android:paddingLeft="10px" android:paddingRight="10px" android:paddingTop="5px" /></LinearLayout>
