@@ -52,7 +52,7 @@ namespace sBike
             {
                 var colors = new List<Integer>();
                 colors.Add(new Integer(Color.Red));
-                colors.Add(new Integer(Color.LightCyan));
+                colors.Add(new Integer(Color.Cyan));
                 colors.Add(new Integer(Color.Blue));
                 colors.Add(new Integer(Color.Green));
                 colors.Add(new Integer(Color.Yellow));
@@ -77,6 +77,11 @@ namespace sBike
 
             if (name == "GroupedBar")
             {
+
+                var colors = new List<Integer>();
+                colors.Add(new Integer(Color.Red));
+                //colors.Add(new Integer(Color.Cyan));
+
                 ColumnSeries columnSeries_1 = (new ColumnSeries()
                 {
                     DataSource = dataModel,
@@ -94,6 +99,8 @@ namespace sBike
                 columnSeries_2.DataMarker.ShowLabel = true;
                 columnSeries_2.AnimationEnabled = true;
                 columnSeries_2.AnimationDuration = 2;
+                columnSeries_2.ColorModel.ColorPalette = ChartColorPalette.Custom;
+                columnSeries_2.ColorModel.CustomColors = colors;
                 chart.Series.Add(columnSeries_1);
                 chart.Series.Add(columnSeries_2);
             }
@@ -106,6 +113,7 @@ namespace sBike
                     Label = "Stolen Bycicles"
                 });
                 lineSeries.DataMarker.ShowLabel = true;
+                lineSeries.DataMarker.LabelStyle.TextColor = Color.Black;
                 lineSeries.AnimationEnabled = true;
                 lineSeries.AnimationDuration = 2;
                 chart.Series.Add(lineSeries);
