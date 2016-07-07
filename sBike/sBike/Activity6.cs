@@ -19,7 +19,7 @@ namespace sBike
     [Activity(Label = "sBike")]
     public class Activity6 : Activity
     {
-        // Create the activity
+        // Create the activity.
 
         TextView _dateDisplay;
         Button _dateSelectButton;
@@ -31,7 +31,7 @@ namespace sBike
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Question7_layout);
 
-            // Load buttons and events
+            // Load buttons and events.
             _addReminderButton = FindViewById<Button>(Resource.Id.add_reminder);
             _dateDisplay = FindViewById<TextView>(Resource.Id.date_display);
             _dateSelectButton = FindViewById<Button>(Resource.Id.date_select_button);
@@ -57,7 +57,7 @@ namespace sBike
             var addSampleEvent = FindViewById<Button>(Resource.Id.add_reminder);
 
             
-            // Create Event code
+            // Create Event code.
             ContentValues eventValues = new ContentValues();
             eventValues.Put(CalendarContract.Events.InterfaceConsts.CalendarId, 1);
             eventValues.Put(CalendarContract.Events.InterfaceConsts.Title, "Pick up bike");
@@ -72,12 +72,12 @@ namespace sBike
 
             var uri = ContentResolver.Insert(CalendarContract.Events.ContentUri, eventValues);
 
-            // Debugging purposes
+            // Debugging purposes.
             Console.WriteLine("Uri for new event: {0}", uri);
         }
 
 
-        // Used because necessary
+        // Used because it is necessary.
         long GetDateTimeMS(int yr, int month, int day, int hr, int min)
         {
             Calendar c = Calendar.GetInstance(Java.Util.TimeZone.Default);
@@ -95,7 +95,7 @@ namespace sBike
 
     public class DatePickerFragment : DialogFragment, DatePickerDialog.IOnDateSetListener
     {
-        // Setting Tag on fragment in order to call
+        // Setting Tag on fragment in order to call.
         public static readonly string TAG = "X:" + typeof(DatePickerFragment).Name.ToUpper();
         Action<DateTime> _dateSelectedHandler = delegate { };
         public DateTime date;

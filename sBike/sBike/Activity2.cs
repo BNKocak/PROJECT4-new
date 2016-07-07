@@ -17,15 +17,15 @@ namespace sBike
     [Activity(Label = "sBike")]
     public class Activity2 : Activity
     {
-        // Create the activity
+        // Create the activity.
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Datamodel executes the query to get the data
+            // Datamodel executes the query to get the data.
             DataModel dataModel = new DataModel();
 
-            // Create chart and set properties -> Chartfactory
+            // Create chart and set properties -> Chartfactory.
             SfChart chart = new ChartFactory().Create(this, "Line", dataModel.Question2(), dataModel.Question2());
 
             chart.Title.Text = "Amount of thefts per month";
@@ -42,7 +42,7 @@ namespace sBike
             chart.PrimaryAxis = primaryAxis;
             chart.SecondaryAxis = secondaryAxis;
 
-            // Add chart to the view
+            // Add chart to the view.
             SetContentView(chart);
         }
     }

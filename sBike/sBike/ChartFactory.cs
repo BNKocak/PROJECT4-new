@@ -60,7 +60,7 @@ namespace sBike
                 ColumnSeries columnSeries = (new ColumnSeries()
                 {
                     DataSource = dataModel,
-                    Label = "Amount of Bikecontainers"
+                    Label = "Amount of bike containers"
 
                 });
                 columnSeries.DataMarker.ShowLabel = true;
@@ -100,7 +100,7 @@ namespace sBike
                 columnSeries_2.ColorModel.ColorPalette = ChartColorPalette.Custom;
                 columnSeries_2.ColorModel.CustomColors = colors;
 
-                chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
+                chart.Title.Text = "Amount of thefts and bike containers per month";
 
                 CategoryAxis primaryAxis = new CategoryAxis();
                 NumericalAxis secondaryAxis = new NumericalAxis();
@@ -120,7 +120,7 @@ namespace sBike
                 LineSeries lineSeries = (new LineSeries()
                 {
                     DataSource = dataModel,
-                    Label = "Stolen Bycicles"
+                    Label = "Stolen bicycles"
                 });
                 lineSeries.DataMarker.ShowLabel = true;
                 lineSeries.DataMarker.LabelStyle.TextColor = Color.Black;

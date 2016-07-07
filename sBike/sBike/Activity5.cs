@@ -15,7 +15,7 @@ namespace sBike
     [Activity(Label = "sBike")]
     public class Activity5 : Activity, ILocationListener
     {
-        // Adding instance variables
+        // Adding instance variables.
         static readonly string TAG = "X:" + typeof(Activity5).Name;
         TextView _addressText;
         TextView savedAddress;
@@ -31,7 +31,7 @@ namespace sBike
             _currentLocation = location;
             if (_currentLocation == null)
             {
-                _locationText.Text = "Unable to determine your location. Try again in a short whilez.";
+                _locationText.Text = "Unable to determine your location. Try again in a short while.";
             }
             else
             {
@@ -52,7 +52,7 @@ namespace sBike
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Question5_layout);
 
-            // Handler for button clicks
+            // Handler for button clicks.
             savedAddress = FindViewById<TextView>(Resource.Id.DBAddressText);
             Button btnSaveAddress = FindViewById<Button>(Resource.Id.btnSaveAddress);
             Button btnDeleteAddress = FindViewById<Button>(Resource.Id.btnDeleteAddress);

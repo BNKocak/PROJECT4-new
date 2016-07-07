@@ -27,7 +27,7 @@ namespace sBike
 
             // Create chart and set properties -> Chartfactory
             SfChart chart = new ChartFactory().Create(this, "Bar", dataModel.Question1(), dataModel.Question1());
-            chart.Title.Text = "Top 5 amount of bikecontainers per neighbourhood";
+            chart.Title.Text = "Top 5 amount of bike containers per neighbourhood";
 
             CategoryAxis primaryAxis = new CategoryAxis();
             NumericalAxis secondaryAxis = new NumericalAxis();
@@ -36,7 +36,7 @@ namespace sBike
             primaryAxis.Title.Text = "Neighbourhood";
 
             secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Bikecontainers";
+            secondaryAxis.Title.Text = "Bike containers";
 
             chart.PrimaryAxis = primaryAxis;
             chart.SecondaryAxis = secondaryAxis;

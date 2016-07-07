@@ -14,10 +14,10 @@ namespace sBike
 
     public class DBRepository
     {
-        //string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormdemo.db3");
+        // string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormdemo.db3");
         SQLiteConnection db = new SQLiteConnection(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "ormdemo.db3"));
 
-        //code to create the database
+        // Code to create the database.
         public string CreateDB()
         {
 
@@ -28,7 +28,7 @@ namespace sBike
             return output;
         }
 
-        //Code to create the tabel
+        // Code to create the table.
         public string CreateTable()
         {
             try
@@ -151,7 +151,7 @@ namespace sBike
             }
         }
 
-        // Calling the Parser in order to insert all data to database
+        // Calling the Parser in order to insert all data to database.
         public void AddRecord(Activity src)
         {
             //StartActivity(typeof(InsertTask_Activity));
@@ -168,7 +168,7 @@ namespace sBike
             ReadandParseData("fietsdiefstal-rotterdam-2011-2013.csv", ',', "bikethefts", src);
         }
 
-        // Delete all data
+        // Delete all data.
         public void deleteData()
         {
             db.Query<Fietstrommels>("DELETE FROM Fietstrommels");

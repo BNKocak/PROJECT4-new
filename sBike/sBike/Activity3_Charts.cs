@@ -15,7 +15,7 @@ using Android.Graphics;
 namespace sBike
 {
 
-    // All activities for charts in Question 3 are created here using ChartFactory
+    // All activities for charts in Question 3 are created here using ChartFactory.
 
     [Activity()]
     public class Activity3_1 : Activity

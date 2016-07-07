@@ -15,15 +15,15 @@ namespace Phoneword
     [Activity(Label = "sBike", MainLauncher = true)]
     public class MainActivity : Activity
     {
-        // Create the activity
+        // Create the activity.
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            // Set our view from the "main" layout resource
+            // Set our view from the "main" layout resource.
             SetContentView(Resource.Layout.Main);
 
-            // Make list of buttons and activities
+            // Make list of buttons and activities.
             List<Button> buttonlist = new List<Button>();
             List<Type> activitylist = new List<Type>();
 
@@ -47,7 +47,7 @@ namespace Phoneword
             dbr.CreateTable();
             dbr.AddRecord(this);
 
-            // foreach button connect a activity for event onClick
+            // foreach button connect a activity for event onClick.
             foreach (Button btn in buttonlist)
             {
 

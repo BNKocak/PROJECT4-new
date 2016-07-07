@@ -17,19 +17,19 @@ namespace sBike
     [Activity(Label = "sBike")]
     public class Activity4 : Activity
     {
-        // Create the activity
+        // Create the activity.
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             
-            // Set the view to layout
+            // Set the view to layout.
             SetContentView(Resource.Layout.Question4_layout);
 
-            // Create the buttons by loading resource
+            // Create the buttons by loading resource.
             Button Brands_button = (FindViewById<Button>(Resource.Id.brands_button));
             Button Colors_button = (FindViewById<Button>(Resource.Id.colors_button));
 
-            // Connect buttons to an activity onClick
+            // Connect buttons to an activity onClick.
             Brands_button.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(Activity4_1));
