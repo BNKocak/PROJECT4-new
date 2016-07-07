@@ -14,6 +14,9 @@ using Android.Graphics;
 
 namespace sBike
 {
+
+    // All activities for charts in Question 3 are created here using ChartFactory
+
     [Activity()]
     public class Activity3_1 : Activity
     {
@@ -22,20 +25,6 @@ namespace sBike
             base.OnCreate(savedInstanceState);
             DataModel dataModel = new DataModel();
             SfChart chart = new ChartFactory().Create(this, "GroupedBar", dataModel.CENTRUM(), dataModel.CENTRUM1());
-
-            chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
-
-            CategoryAxis primaryAxis = new CategoryAxis();
-            NumericalAxis secondaryAxis = new NumericalAxis();
-
-            primaryAxis.Title.TextColor = Color.White;
-            primaryAxis.Title.Text = "Date";
-
-            secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Amount";
-
-            chart.PrimaryAxis = primaryAxis;
-            chart.SecondaryAxis = secondaryAxis;
 
             SetContentView(chart);
         }
@@ -50,20 +39,6 @@ namespace sBike
             DataModel dataModel = new DataModel();
             SfChart chart = new ChartFactory().Create(this, "GroupedBar", dataModel.NOORD(), dataModel.NOORD1());
 
-            chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
-
-            CategoryAxis primaryAxis = new CategoryAxis();
-            NumericalAxis secondaryAxis = new NumericalAxis();
-
-            primaryAxis.Title.TextColor = Color.White;
-            primaryAxis.Title.Text = "Date";
-
-            secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Amount";
-
-            chart.PrimaryAxis = primaryAxis;
-            chart.SecondaryAxis = secondaryAxis;
-
             SetContentView(chart);
         }
     }
@@ -76,20 +51,6 @@ namespace sBike
             base.OnCreate(savedInstanceState);
             DataModel dataModel = new DataModel();
             SfChart chart = new ChartFactory().Create(this, "GroupedBar", dataModel.FEIJNOORD(), dataModel.FEIJNOORD1());
-
-            chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
-
-            CategoryAxis primaryAxis = new CategoryAxis();
-            NumericalAxis secondaryAxis = new NumericalAxis();
-
-            primaryAxis.Title.TextColor = Color.White;
-            primaryAxis.Title.Text = "Date";
-
-            secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Amount";
-
-            chart.PrimaryAxis = primaryAxis;
-            chart.SecondaryAxis = secondaryAxis;
 
             SetContentView(chart);
         }
@@ -104,20 +65,6 @@ namespace sBike
             DataModel dataModel = new DataModel();
             SfChart chart = new ChartFactory().Create(this, "GroupedBar", dataModel.HILLEGERSBERG(), dataModel.HILLEGERSBERG1());
 
-            chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
-
-            CategoryAxis primaryAxis = new CategoryAxis();
-            NumericalAxis secondaryAxis = new NumericalAxis();
-
-            primaryAxis.Title.TextColor = Color.White;
-            primaryAxis.Title.Text = "Date";
-
-            secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Amount";
-
-            chart.PrimaryAxis = primaryAxis;
-            chart.SecondaryAxis = secondaryAxis;
-
             SetContentView(chart);
         }
     }
@@ -130,20 +77,6 @@ namespace sBike
             base.OnCreate(savedInstanceState);
             DataModel dataModel = new DataModel();
             SfChart chart = new ChartFactory().Create(this, "GroupedBar", dataModel.OVERSCHIE(), dataModel.OVERSCHIE1());
-
-            chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
-
-            CategoryAxis primaryAxis = new CategoryAxis();
-            NumericalAxis secondaryAxis = new NumericalAxis();
-
-            primaryAxis.Title.TextColor = Color.White;
-            primaryAxis.Title.Text = "Date";
-
-            secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Amount";
-
-            chart.PrimaryAxis = primaryAxis;
-            chart.SecondaryAxis = secondaryAxis;
 
             SetContentView(chart);
         }
@@ -158,20 +91,6 @@ namespace sBike
             DataModel dataModel = new DataModel();
             SfChart chart = new ChartFactory().Create(this, "GroupedBar", dataModel.CHARLOIS(), dataModel.CHARLOIS1());
 
-            chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
-
-            CategoryAxis primaryAxis = new CategoryAxis();
-            NumericalAxis secondaryAxis = new NumericalAxis();
-
-            primaryAxis.Title.TextColor = Color.White;
-            primaryAxis.Title.Text = "Date";
-
-            secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Amount";
-
-            chart.PrimaryAxis = primaryAxis;
-            chart.SecondaryAxis = secondaryAxis;
-
             SetContentView(chart);
         }
     }
@@ -185,20 +104,6 @@ namespace sBike
             DataModel dataModel = new DataModel();
             SfChart chart = new ChartFactory().Create(this, "GroupedBar", dataModel.IJSELMONDE(), dataModel.IJSELMONDE1());
 
-            chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
-
-            CategoryAxis primaryAxis = new CategoryAxis();
-            NumericalAxis secondaryAxis = new NumericalAxis();
-
-            primaryAxis.Title.TextColor = Color.White;
-            primaryAxis.Title.Text = "Date";
-
-            secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Amount";
-
-            chart.PrimaryAxis = primaryAxis;
-            chart.SecondaryAxis = secondaryAxis;
-
             SetContentView(chart);
         }
     }
@@ -211,20 +116,6 @@ namespace sBike
             base.OnCreate(savedInstanceState);
             DataModel dataModel = new DataModel();
             SfChart chart = new ChartFactory().Create(this, "GroupedBar", dataModel.HOOGVLIET(), dataModel.HOOGVLIET1());
-
-            chart.Title.Text = "Amount of Thefts and Bikecontainers per month";
-
-            CategoryAxis primaryAxis = new CategoryAxis();
-            NumericalAxis secondaryAxis = new NumericalAxis();
-
-            primaryAxis.Title.TextColor = Color.White;
-            primaryAxis.Title.Text = "Date";
-
-            secondaryAxis.Title.TextColor = Color.White;
-            secondaryAxis.Title.Text = "Amount";
-
-            chart.PrimaryAxis = primaryAxis;
-            chart.SecondaryAxis = secondaryAxis;
 
             SetContentView(chart);
         }

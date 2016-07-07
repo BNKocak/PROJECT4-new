@@ -17,6 +17,7 @@ namespace sBike
     [Activity(Label = "sBike")]
     public class Activity1 : Activity
     {
+        // Create the activity
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -40,6 +41,7 @@ namespace sBike
             chart.PrimaryAxis = primaryAxis;
             chart.SecondaryAxis = secondaryAxis;
 
+            // Add chart to the view
             SetContentView(chart);
         }
     }
